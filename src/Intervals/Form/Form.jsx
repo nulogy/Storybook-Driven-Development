@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
+import TextField from "../../Forms/Fields/TextField";
 
 const IntervalForm = props => (
   <form>
     <h2 className="title">Create new interval</h2>
 
-    <div className="field">
-      <label className="label" htmlFor="interval_name"  >Add interval name</label>
-      <input className="inputText" type="text" id="interval_name" name="interval_name"  />
-    </div>
+    <TextField name="interval_name" label="Add interval name" />
 
     <div className="field">
       <label className="label" htmlFor="start_milestone"  >Select start milestone</label>
