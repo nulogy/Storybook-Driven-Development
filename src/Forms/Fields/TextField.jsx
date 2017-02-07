@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react";
+import Field from "./Field";
 
 const TextField = ({
   disabled = false,
@@ -7,8 +8,7 @@ const TextField = ({
   placeholder,
   value,
 }) => (
-  <div className="field">
-    <label className="label" htmlFor={name}>{label}</label>
+  <Field name={name} label={label}>
     <input
       disabled={disabled}
       className="input inputText"
@@ -18,7 +18,7 @@ const TextField = ({
       type="text"
       value={value}
     />
-  </div>
+  </Field>
 );
 
 TextField.propTypes = {
