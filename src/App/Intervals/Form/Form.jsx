@@ -1,6 +1,6 @@
 import React from "react";
-import TextField from "../../../Forms/Fields/TextField";
-import SelectField from "../../../Forms/Fields/SelectField";
+import TextField from "~/Forms/Fields/TextField";
+import SelectField from "~/Forms/Fields/SelectField";
 
 const options = [
   { value: "plv_available", text: "PLV available" },
