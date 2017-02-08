@@ -1,12 +1,13 @@
 import React, { PropTypes } from "react";
+import styles from "./Field.css";
 
 const Field = ({
   children,
   label,
   name,
 }) => (
-  <div className="field">
-    <label className="label" htmlFor={name}>{label}</label>
+  <div className={styles.field}>
+    <label className={styles.label} htmlFor={name}>{label}</label>
     { children }
   </div>
 );
