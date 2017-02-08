@@ -1,0 +1,32 @@
+.button {
+  border: 2px solid;
+  border-radius: 2px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.button:disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.normal {
+  composes: button;
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+.normal:hover {
+  background-color: black;
+  color: white;
+}
+
+.submit {
+  composes: button;
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+.submit:hover {
+  background-color: white;
+  color: black;
+}

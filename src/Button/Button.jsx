@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react";
+import styles from "./Button.css";
 
 const Button = ({
   children,
@@ -7,7 +8,7 @@ const Button = ({
   submit = false
 }) => (
   <button
-    className="button"
+    className={styles[submit ? "submit" : "normal"]}
     disabled={disabled}
     id={name}
     name={name}
