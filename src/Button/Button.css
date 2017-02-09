@@ -1,12 +1,18 @@
 .button {
   border: .2rem solid;
   border-radius: .2rem;
-  line-height: 2rem;
+  line-height: 4rem;
+  padding: 0 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .button:disabled {
   opacity: .5;
   pointer-events: none;
+}
+
+.button + .button {
+  margin-left: 2rem;
 }
 
 .normal {

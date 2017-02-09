@@ -1,7 +1,8 @@
 .input {
-  height: 3rem;
-  line-height: 3rem;
-  padding: 0 5px;
+  font-size: 1.6rem;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 1rem;
   border: .1rem solid black;
   border-radius: .2rem;
   box-shadow: inset .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.08);
@@ -13,11 +14,11 @@
   pointer-events: none;
 }
 
-.inputText {
+.inputText,
+.inputSelect {
   composes: input;
 }
 
 .inputSelect {
-  composes: input;
   appearance: none;
 }
