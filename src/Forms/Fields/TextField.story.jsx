@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
+import '~/index.css';
 import TextField from './TextField';
 
 export default function TextFieldStory() {
