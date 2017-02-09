@@ -1,10 +1,10 @@
 .input {
-  height: 30px;
-  line-height: 30px;
+  height: 3rem;
+  line-height: 3rem;
   padding: 0 5px;
-  border: 1px solid black;
-  border-radius: 2px;
-  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.08);
+  border: .1rem solid black;
+  border-radius: .2rem;
+  box-shadow: inset .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.08);
   background-color: white;
   width: 100%;
 }

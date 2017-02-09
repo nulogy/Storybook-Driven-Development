@@ -1,7 +1,7 @@
 .button {
-  border: 2px solid;
-  border-radius: 2px;
-  line-height: 20px;
+  border: .2rem solid;
+  border-radius: .2rem;
+  line-height: 2rem;
   font-weight: 600;
 }
 .button:disabled {
