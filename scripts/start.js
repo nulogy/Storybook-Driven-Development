@@ -1,3 +1,11 @@
+//windows hack for bash support
+try {
+  require('os').networkInterfaces();
+} catch (e) {
+  require('os').networkInterfaces = () => ({});
+}
+//end windows hack
+
 process.env.NODE_ENV = 'development';
 
 // Load environment variables from .env file. Suppress warnings using silent
