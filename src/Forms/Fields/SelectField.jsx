@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react";
 import Field from "./Field";
+import styles from "../Inputs/Input.css";
 
 const mapOptions = options => ( options.map(
   ({text, value}) => <option value={value} key={value}>{ text ? text : value }</option>
@@ -15,7 +16,7 @@ const SelectField = ({
   <Field name={name} label={label}>
     <select
       disabled={disabled}
-      className="input inputSelect"
+      className={styles.inputSelect}
       id={name}
       name={name}
       value={value}

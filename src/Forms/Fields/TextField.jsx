@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react";
 import Field from "./Field";
+import styles from "../Inputs/Input.css"
 
 const TextField = ({
   disabled = false,
@@ -11,7 +12,7 @@ const TextField = ({
   <Field name={name} label={label}>
     <input
       disabled={disabled}
-      className="input inputText"
+      className={styles.inputText}
       id={name}
       name={name}
       placeholder={placeholder}

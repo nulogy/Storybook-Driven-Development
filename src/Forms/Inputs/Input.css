@@ -1,0 +1,23 @@
+.input {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  width: 100%;
+}
+.input:disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.inputText {
+  composes: input;
+}
+
+.inputSelect {
+  composes: input;
+  appearance: none;
+}
