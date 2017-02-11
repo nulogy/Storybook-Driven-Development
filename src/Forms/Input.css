@@ -1,10 +1,10 @@
 .input {
   font-size: 1.6rem;
   height: 4rem;
-  line-height: 4rem;
-  padding: 0 1rem;
+  line-height: 3.8rem;
+  padding: 0 1.5rem;
   border: .1rem solid black;
-  border-radius: .2rem;
+  border-radius: .3rem;
   box-shadow: inset .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.08);
   background-color: white;
   width: 100%;
