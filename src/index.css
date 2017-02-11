@@ -13,3 +13,8 @@ body {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+p {
+  padding: 0;
+  margin: 0 0 2rem;
+}
