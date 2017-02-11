@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import '~/index.css';
 import Button from './Button';
 
 export default function ButtonStory() {

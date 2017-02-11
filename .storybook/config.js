@@ -1,4 +1,12 @@
-import { configure } from '@kadira/storybook';
+import React from "react";
+import { configure, addDecorator } from "@kadira/storybook";
+import StorybookTheme from "./StorybookTheme";
+
+addDecorator((story) => (
+  <StorybookTheme>
+    {story()}
+  </StorybookTheme>
+));
 
 const req = require.context(
   "../src",       // path where stories live
