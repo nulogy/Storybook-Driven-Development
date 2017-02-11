@@ -1,5 +1,5 @@
 .input {
-  composes: fontSize--normal from "~/Type/Type.css";
+  composes: fontSize--normal from "~/Atoms/Type.css";
   line-height: 3.8rem;
   height: 4rem;
   padding: 0 1.5rem;

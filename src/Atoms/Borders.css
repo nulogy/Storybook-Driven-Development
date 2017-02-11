@@ -1,0 +1,11 @@
+.borderWidth--light  { border-width: .1rem; }
+.borderWidth--normal  { border-width: .2rem; }
+.borderWidth--heavy   { border-width: .3rem; }
+
+.borderStyle--normal  { border-style: solid; }
+
+.borderRadius--normal { border-radius: .3rem; }
+
+.light { composes: borderWidth--light borderStyle--normal borderRadius--normal; }
+.normal { composes: borderWidth--normal borderStyle--normal borderRadius--normal; }
+.heavy { composes: borderWidth--heavy borderStyle--normal borderRadius--normal; }

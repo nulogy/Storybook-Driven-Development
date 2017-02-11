@@ -1,5 +1,5 @@
 .title {
-  composes: xlarge from "~/Type/Type.css";
+  composes: xlarge from "~/Atoms/Type.css";
   border-bottom: .1rem solid black;
   padding-bottom: .4rem;
   margin-bottom: 2.5rem;
