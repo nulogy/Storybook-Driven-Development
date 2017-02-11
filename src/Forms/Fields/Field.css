@@ -3,9 +3,5 @@
 }
 
 .label {
-  font-size: 1.4rem;
-  display: block;
-  line-height: 2rem;
-  margin: 0 0 1rem;
-  padding-top: 1rem;
+  composes: label from "../Label.css";
 }
