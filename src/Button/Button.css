@@ -10,6 +10,9 @@
 .button:disabled {
   opacity: .5;
   pointer-events: none;
+  color: #aaa;
+  border-color: #aaa;
+  background-color: #eee;
 }
 
 .button + .button {
@@ -32,6 +35,11 @@
   background-color: black;
   border-color: black;
   color: white;
+}
+.submit:disabled {
+  color: #eee;
+  border-color: #aaa;
+  background-color: #aaa;
 }
 .submit:hover {
   background-color: white;

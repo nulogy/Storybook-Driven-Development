@@ -11,6 +11,8 @@
 }
 .input:disabled {
   opacity: .5;
+  background-color: #eee;
+  border-color: #aaa;
   pointer-events: none;
 }
 
