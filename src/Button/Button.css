@@ -1,8 +1,9 @@
 .button {
   border: .2rem solid;
-  border-radius: .2rem;
-  line-height: 4rem;
-  padding: 0 1rem;
+  border-radius: .3rem;
+  line-height: 3.6rem;
+  height: 4rem;
+  padding: 0 1.5rem;
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -12,7 +13,7 @@
 }
 
 .button + .button {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 .normal {
