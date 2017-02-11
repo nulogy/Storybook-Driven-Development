@@ -1,7 +1,7 @@
 .input {
-  font-size: 1.6rem;
-  height: 4rem;
+  composes: fontSize--normal from "~/Type/Type.css";
   line-height: 3.8rem;
+  height: 4rem;
   padding: 0 1.5rem;
   border: .1rem solid black;
   border-radius: .3rem;

@@ -1,11 +1,11 @@
 .button {
+  composes: fontSize--normal from "~/Type/Type.css";
+  line-height: 3.6rem;
+  font-weight: 600;
   border: .2rem solid;
   border-radius: .3rem;
-  line-height: 3.6rem;
   height: 4rem;
   padding: 0 1.5rem;
-  font-size: 1.6rem;
-  font-weight: 600;
 }
 .button:disabled {
   opacity: .5;

@@ -1,12 +1,11 @@
 .title {
-  font-size: 2.4rem;
-  line-height: 3rem;
-  border-bottom: 1px solid black;
-  padding-bottom: 4px;
-  margin-bottom: 25px;
+  composes: xlarge from "~/Type/Type.css";
+  border-bottom: .1rem solid black;
+  padding-bottom: .4rem;
+  margin-bottom: 2.5rem;
 }
 
 .actions {
-  padding-top: 40px;
+  padding-top: 4rem;
   text-align: right;
 }

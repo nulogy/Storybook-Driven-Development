@@ -1,7 +1,6 @@
 .label {
-  font-size: 1.4rem;
+  composes: small from "~/Type/Type.css";
   display: block;
-  line-height: 2rem;
   margin: 0 0 1rem;
   padding-top: 1rem;
 }
