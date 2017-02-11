@@ -1,6 +1,6 @@
 .title {
   composes: xlarge from "~/Atoms/Type.css";
-  border-bottom: .1rem solid black;
+  composes: light--bottom--sharp from "~/Atoms/Borders.css";
   padding-bottom: .4rem;
   margin-bottom: 2.5rem;
 }

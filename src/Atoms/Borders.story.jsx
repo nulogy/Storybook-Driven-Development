@@ -15,12 +15,28 @@ export default function BordersStory() {
     .add('border styles', () => (
       <div>
         <Box className="light" />
-        <Box className="normal" />
+        <Box className="medium" />
         <Box className="heavy" />
 
-          <Box className="light--sharp" />
-          <Box className="normal--sharp" />
-          <Box className="heavy--sharp" />
+        <Box className="light--sharp" />
+        <Box className="medium--sharp" />
+        <Box className="heavy--sharp" />
+
+        <Box className="light--top--sharp" />
+        <Box className="medium--top--sharp" />
+        <Box className="heavy--top--sharp" />
+
+        <Box className="light--bottom--sharp" />
+        <Box className="medium--bottom--sharp" />
+        <Box className="heavy--bottom--sharp" />
+
+        <Box className="light--left--sharp" />
+        <Box className="medium--left--sharp" />
+        <Box className="heavy--left--sharp" />
+
+        <Box className="light--right--sharp" />
+        <Box className="medium--right--sharp" />
+        <Box className="heavy--right--sharp" />
       </div>
     ));
 }
