@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "~/Button";
+import styles from "~/Forms/Form.css";
 import TextField from "~/Forms/Fields/TextField";
 import SelectField from "~/Forms/Fields/SelectField";
 
@@ -10,7 +11,7 @@ const options = [
 
 const IntervalForm = props => (
   <form>
-    <h2 className="title">Create new interval</h2>
+    <h2 className={styles.title}>Create new interval</h2>
 
     <TextField
       name="interval_name"
@@ -31,7 +32,7 @@ const IntervalForm = props => (
       options={options}
     />
 
-    <div className="actions">
+  <div className={styles.actions}>
       <Button name="cancel">Cancel</Button>
       <Button name="save" submit>Save interval</Button>
     </div>
