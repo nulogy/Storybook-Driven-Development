@@ -7,9 +7,16 @@
   --colour-blue: #0096FF;
 }
 
-.colour__text--black { color: var(--colour-black); }
-.colour__text--grey-dark { color: var(--colour-grey-dark); }
-.colour__text--grey { color: var(--colour-grey); }
+.colour__text--black      { color: var(--colour-black); }
+.colour__text--grey-dark  { color: var(--colour-grey-dark); }
+.colour__text--grey       { color: var(--colour-grey); }
 .colour__text--grey-light { color: var(--colour-grey-light); }
-.colour__text--white { color: var(--colour-white); }
-.colour__text--blue { color: var(--colour-blue); }
+.colour__text--white      { color: var(--colour-white); }
+.colour__text--blue       { color: var(--colour-blue); }
+
+.colour__background--black      { background-color: var(--colour-black); }
+.colour__background--grey-dark  { background-color: var(--colour-grey-dark); }
+.colour__background--grey       { background-color: var(--colour-grey); }
+.colour__background--grey-light { background-color: var(--colour-grey-light); }
+.colour__background--white      { background-color: var(--colour-white); }
+.colour__background--blue       { background-color: var(--colour-blue); }
