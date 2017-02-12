@@ -13,6 +13,8 @@ const boxStyle = isInverse => {
   let style = {
       "text-align": "center",
       color: "white",
+      borderStyle: "solid",
+      borderWidth: ".4rem",
       padding: "2rem",
       height: "6rem",
       "margin-bottom": "2rem"
@@ -45,6 +47,16 @@ export default function ColoursStory() {
         <Box className="colour__background--grey-light" />
         <Box className="colour__background--white" inverse />
         <Box className="colour__background--blue" />
+      </div>
+    ))
+    .add('borders', () => (
+      <div>
+        <Box className="colour__border--black" inverse />
+        <Box className="colour__border--grey-dark" inverse />
+        <Box className="colour__border--grey" inverse />
+        <Box className="colour__border--grey-light" inverse />
+        <Box className="colour__border--white" inverse />
+        <Box className="colour__border--blue" inverse />
       </div>
     ));
 

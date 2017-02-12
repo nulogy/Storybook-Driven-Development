@@ -20,3 +20,10 @@
 .colour__background--grey-light { background-color: var(--colour-grey-light); }
 .colour__background--white      { background-color: var(--colour-white); }
 .colour__background--blue       { background-color: var(--colour-blue); }
+
+.colour__border--black      { border-color: var(--colour-black); }
+.colour__border--grey-dark  { border-color: var(--colour-grey-dark); }
+.colour__border--grey       { border-color: var(--colour-grey); }
+.colour__border--grey-light { border-color: var(--colour-grey-light); }
+.colour__border--white      { border-color: var(--colour-white); }
+.colour__border--blue       { border-color: var(--colour-blue); }
