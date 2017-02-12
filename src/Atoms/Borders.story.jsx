@@ -11,7 +11,7 @@ const Box = ({className}) => (
   }}>{className}</div>);
 
 export default function BordersStory() {
-  storiesOf('Borders', module)
+  storiesOf('⭐️ Borders', module)
     .add('border styles', () => (
       <div>
         <Box className="light" />

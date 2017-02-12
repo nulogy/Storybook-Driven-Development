@@ -17,7 +17,7 @@ const props = {
 }
 
 export default function RadioFieldStory() {
-  storiesOf('RadioField', module)
+  storiesOf('❤️ RadioField', module)
     .add('default', () => (
       <RadioField {...props} />
     ))

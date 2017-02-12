@@ -11,7 +11,7 @@ const Box = ({className}) => (
   }}>{className}</div>);
 
 export default function ShadowsStory() {
-  storiesOf('Shadows', module)
+  storiesOf('⭐️ Shadows', module)
     .add('shadow styles', () => (
       <div>
         <Box className="one--light" />

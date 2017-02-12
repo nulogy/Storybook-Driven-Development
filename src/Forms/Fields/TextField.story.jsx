@@ -3,7 +3,7 @@ import { storiesOf } from '@kadira/storybook';
 import TextField from './TextField';
 
 export default function TextFieldStory() {
-  storiesOf('TextField', module)
+  storiesOf('❤️ TextField', module)
     .add('default', () => (
       <TextField name="name" label="a label" />
     ))

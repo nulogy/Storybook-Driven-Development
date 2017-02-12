@@ -6,7 +6,7 @@ export default function ButtonStory() {
   const props = {
     name: "button",
   }
-  storiesOf('Button', module)
+  storiesOf('❤️ Button', module)
     .add('default', () => (
       <Button {...props}>Click me</Button>
     ))

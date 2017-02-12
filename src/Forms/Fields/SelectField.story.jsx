@@ -14,7 +14,7 @@ export default function SelectFieldStory() {
     options,
   }
 
-  storiesOf('SelectField', module)
+  storiesOf('❤️ SelectField', module)
     .add('default', () => (
       <SelectField {...props} />
     ))
