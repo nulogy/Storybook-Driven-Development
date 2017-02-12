@@ -7,7 +7,7 @@ const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, se
 export default function MyComponentStory() {
   storiesOf('Type', module)
     .add('type scale', () => (
-      <div style={{"margin-top": "1rem"}}>
+      <div>
         <p className={type.micro}>micro&mdash;8/10</p>
         <p className={type.tiny}>tiny&mdash;12/20</p>
         <p className={type.small}>small&mdash;14/20</p>
@@ -42,6 +42,28 @@ export default function MyComponentStory() {
         <p className={type.giant}>{loremIpsum}</p>
         <p className={type.titanic}><b>titanic&mdash;64/80</b></p>
         <p className={type.titanic}>{loremIpsum}</p>
+      </div>
+    ))
+    .add('headings', () => (
+      <div>
+        <p className={type.h8}>h8&mdash;12/20</p>
+        <p className={type.h7}>h7&mdash;14/20</p>
+        <p className={type.h6}>h6&mdash;16/20</p>
+        <p className={type.h5}>h5&mdash;18/20</p>
+        <p className={type.h4}>h4&mdash;24/30</p>
+        <p className={type.h3}>h3&mdash;32/40</p>
+        <p className={type.h2}>h2&mdash;40/50</p>
+        <p className={type.h1}>h1&mdash;48/60</p>
+        <p className={type.h0}>ho&mdash;64/80</p>
+      </div>
+    ))
+    .add('weights', () => (
+      <div>
+        <p className={type["fontWeight--hairline"]}>fontWeight--hairline</p>
+        <p className={type["fontWeight--light"]}>fontWeight--light</p>
+        <p className={type["fontWeight"]}>fontWeight / fontWeight--normal</p>
+        <p className={type["fontWeight--heavy"]}>fontWeight--heavy</p>
+        <p className={type["fontWeight--bold"]}>fontWeight--bold</p>
       </div>
     ));
 }

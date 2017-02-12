@@ -15,6 +15,19 @@
 .lineHeight         { line-height: 2rem; }
 .lineHeight--large  { line-height: 1.25; }
 
+.lineBreak--small   { margin-bottom: 1rem; }
+.lineBreak          { margin-bottom: 2rem; }
+.lineBreak--large   { margin-bottom: 3rem; }
+.lineBreak--xlarge  { margin-bottom: 4rem; }
+
+.fontWeight--hairline { font-weight: 100; }
+.fontWeight--light    { font-weight: 300; }
+.fontWeight           { font-weight: 400; }
+.fontWeight--normal   { composes: fontWeight; }
+.fontWeight--heavy    { font-weight: 600; }
+.fontWeight--bold     { font-weight: 800; }
+
+
 .micro    { composes: fontSize--micro lineHeight--micro; }
 .tiny     { composes: fontSize--tiny lineHeight; }
 .small    { composes: fontSize--small lineHeight; }
@@ -25,3 +38,20 @@
 .huge     { composes: fontSize--huge lineHeight--large; }
 .giant    { composes: fontSize--giant lineHeight--large; }
 .titanic  { composes: fontSize--titanic lineHeight--large; }
+
+.h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .large, .normal, .small, .tiny {
+  composes: lineBreak fontWeight--bold;
+}
+.micro {
+  composes: lineBreak--small;
+}
+
+.h0 { composes: titanic; }
+.h1 { composes: giant; }
+.h2 { composes: huge; }
+.h3 { composes: xxlarge; }
+.h4 { composes: xlarge; }
+.h5 { composes: large; }
+.h6 { composes: normal; }
+.h7 { composes: small; }
+.h8 { composes: tiny; }
