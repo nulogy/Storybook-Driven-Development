@@ -4,7 +4,7 @@ import App from './App';
 
 export default function AppStory() {
   storiesOf('App', module)
-    .add('', () => (
+    .add('default', () => (
       <App />
     ));
 }

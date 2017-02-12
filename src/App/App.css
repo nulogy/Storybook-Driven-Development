@@ -1,24 +1,27 @@
-.App {
+.header {
+  background-color: #222;
+  padding: 1rem;
+  color: white;
+  white-space: nowrap;
   text-align: center;
 }
 
+.logo,
+.title {
+  vertical-align: middle;
+}
+
 .logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 4rem;
 }
 
-.header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.title {
+  composes: h3 from "~/Atoms/Type.css";
+  display: inline-block;
 }
 
-.intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.content {
+  width: 48rem;
+  margin: 0 auto;
+  padding: 4rem 0;
 }

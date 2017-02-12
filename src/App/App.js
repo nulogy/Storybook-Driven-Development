@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import styles from './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import styles from "./App.css";
+import IntervalForm from "./Intervals/Form";
 
 class App extends Component {
   render() {
     return (
-      <div className={styles.App}>
+      <div>
         <div className={styles.header}>
           <img src={logo} className={styles.logo} alt="logo" />
-          <h2>Welcome to React</h2>
+          <h1 className={styles.title}>Styleguide Driven Developement</h1>
         </div>
-        <p className={styles.intro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
+        <p className={styles.content}>
+          <IntervalForm />
         </p>
       </div>
     );
