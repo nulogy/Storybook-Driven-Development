@@ -8,10 +8,12 @@ const TextField = ({
   name,
   placeholder,
   value,
+  onChange
 }) => (
   <Field name={name} label={label}>
     <input
       disabled={disabled}
+      onChange={onChange}
       className={styles.inputText}
       id={name}
       name={name}
@@ -27,6 +29,7 @@ TextField.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
+  onChange: PropTypes.func,
   value: PropTypes.oneOfType([
     React.PropTypes.string,
     React.PropTypes.number,
