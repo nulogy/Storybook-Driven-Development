@@ -7,10 +7,10 @@ export default function FormStory() {
     .add('default', () => (
       <Form />
     ))
-    .add('Milestone selected', () => (
-      <Form measurementType="milestone" />
-    ))
     .add('Interval selected', () => (
       <Form measurementType="interval" />
+    ))
+    .add('Milestone selected', () => (
+      <Form measurementType="milestone" />
     ));
 }
