@@ -2,30 +2,34 @@ import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import colours from './Colours.css';
 
-const textStyle = isInverse => isInverse ? {"backgroundColor": "black"} : null;
+const textStyle = isInverse => isInverse ? { backgroundColor: "black"} : null;
 const Text = ({className, inverse = false}) => (
   <p
     className={colours[className]}
     style={textStyle(inverse)}
   >{className}</p>);
 
-const boxStyle = isInverse => {
+const boxStyle = (isInverse, border) => {
   let style = {
-      "text-align": "center",
-      color: "white",
-      borderStyle: "solid",
-      borderWidth: ".4rem",
+      textAlign: "center",
+      color: "black",
       padding: "2rem",
       height: "6rem",
-      "margin-bottom": "2rem"
+      marginBottom: "2rem"
   };
   if (isInverse === true) {
-    style = Object.assign(style, { color: "black"});
+    style = Object.assign(style, { color: "white"});
   };
+  if (border === true) {
+    style = Object.assign(style, {
+      borderStyle: "solid",
+      borderWidth: ".4rem",
+    });
+  }
   return style;
 };
-const Box = ({className, inverse = false}) => (
-  <div className={colours[className]} style={boxStyle(inverse)}>{className}</div>);
+const Box = ({className, inverse = false, border = false}) => (
+  <div className={colours[className]} style={boxStyle(inverse, border)}>{className}</div>);
 
 export default function ColoursStory() {
   storiesOf('Colours', module)
@@ -41,23 +45,22 @@ export default function ColoursStory() {
     ))
     .add('backgrounds', () => (
       <div>
-        <Box className="colour__background--black" />
-        <Box className="colour__background--grey-dark" />
-        <Box className="colour__background--grey" />
-        <Box className="colour__background--grey-light" />
-        <Box className="colour__background--white" inverse />
-        <Box className="colour__background--blue" />
+        <Box className="colour__background--black" inverse />
+        <Box className="colour__background--grey-dark" inverse />
+        <Box className="colour__background--grey" inverse />
+        <Box className="colour__background--grey-light" inverse />
+        <Box className="colour__background--white" />
+        <Box className="colour__background--blue" inverse />
       </div>
     ))
     .add('borders', () => (
       <div>
-        <Box className="colour__border--black" inverse />
-        <Box className="colour__border--grey-dark" inverse />
-        <Box className="colour__border--grey" inverse />
-        <Box className="colour__border--grey-light" inverse />
-        <Box className="colour__border--white" inverse />
-        <Box className="colour__border--blue" inverse />
+        <Box className="colour__border--black" border />
+        <Box className="colour__border--grey-dark" border />
+        <Box className="colour__border--grey" border />
+        <Box className="colour__border--grey-light" border />
+        <Box className="colour__border--white" border />
+        <Box className="colour__border--blue" border />
       </div>
     ));
-
 }
