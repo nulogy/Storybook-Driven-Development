@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react";
 import Field from "./Field";
-import styles from "../Input.css"
+import styles from "../Inputs/Input.css"
 
 const TextField = ({
   disabled = false,

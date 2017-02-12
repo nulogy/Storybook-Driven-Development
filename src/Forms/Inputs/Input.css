@@ -23,4 +23,5 @@
 
 .inputSelect {
   appearance: none;
+  background: url("./Select/select-arrow.svg") 100% 50% no-repeat;
 }
