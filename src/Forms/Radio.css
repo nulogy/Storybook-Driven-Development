@@ -1,0 +1,15 @@
+.label {
+  composes: label from "./Label.css";
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+.disabledLabel {
+  composes: label;
+  opacity: .5;
+  pointer-events: none;
+}
+
+.radio {
+  margin-right: 1.5em;
+}

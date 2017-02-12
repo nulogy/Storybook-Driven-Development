@@ -26,5 +26,5 @@ export default function SelectFieldStory() {
     ))
     .add('disabled with a value', () => (
       <SelectField {...props} value="value_b" disabled />
-    ))
+    ));
 }
