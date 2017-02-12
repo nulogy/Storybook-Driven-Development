@@ -1,0 +1,15 @@
+:root {
+  --colour-black: #000;
+  --colour-grey-dark: #555;
+  --colour-grey: #aaa;
+  --colour-grey-light: #eee;
+  --colour-white: #fff;
+  --colour-blue: #0096FF;
+}
+
+.colour__text--black { color: var(--colour-black); }
+.colour__text--grey-dark { color: var(--colour-grey-dark); }
+.colour__text--grey { color: var(--colour-grey); }
+.colour__text--grey-light { color: var(--colour-grey-light); }
+.colour__text--white { color: var(--colour-white); }
+.colour__text--blue { color: var(--colour-blue); }
