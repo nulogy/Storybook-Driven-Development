@@ -1,0 +1,10 @@
+.link {
+  composes: fontWeight--heavy from "~/Atoms/Type.css";
+  color: hotpink;
+  text-decoration: none;
+}
+.link:hover {
+  color: pink;
+  text-decoration: underline;
+  cursor: pointer;
+}
