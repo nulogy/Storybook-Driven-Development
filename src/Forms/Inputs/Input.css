@@ -23,5 +23,7 @@
 
 .inputSelect {
   appearance: none;
-  background: url("./Select/select-arrow.svg") 100% 50% no-repeat;
+  background-image: url("./Select/select-arrow.svg");
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
 }

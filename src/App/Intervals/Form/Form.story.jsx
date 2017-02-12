@@ -4,7 +4,7 @@ import Form from './Form';
 
 export default function FormStory() {
   storiesOf('Interval Form', module)
-    .add('', () => (
+    .add('default', () => (
       <Form />
     ));
 }
