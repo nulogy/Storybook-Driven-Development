@@ -1,0 +1,60 @@
+.one--light {
+  box-shadow: .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.08);
+}
+.one--medium {
+  box-shadow: .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.1);
+}
+.one--heavy {
+  box-shadow: .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.3);
+}
+
+.two--light {
+  box-shadow: .3rem .3rem .1rem .1rem rgba(0, 0, 0, 0.08);
+}
+.two--medium {
+  box-shadow: .3rem .3rem .1rem .1rem rgba(0, 0, 0, 0.1);
+}
+.two--heavy {
+  box-shadow: .3rem .3rem .1rem .1rem rgba(0, 0, 0, 0.3);
+}
+
+.three--light {
+  box-shadow: .6rem .6rem .1rem .1rem rgba(0, 0, 0, 0.08);
+}
+.three--medium {
+  box-shadow: .6rem .6rem .1rem .1rem rgba(0, 0, 0, 0.1);
+}
+.three--heavy {
+  box-shadow: .6rem .6rem .1rem .1rem rgba(0, 0, 0, 0.3);
+}
+
+
+.one--inset--light {
+  box-shadow: inset .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.08);
+}
+.one--inset--medium {
+  box-shadow: inset .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.1);
+}
+.one--inset--heavy {
+  box-shadow: inset .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.3);
+}
+
+.two--inset--light {
+  box-shadow: inset .3rem .6rem .1rem .1rem rgba(0, 0, 0, 0.08);
+}
+.two--inset--medium {
+  box-shadow: inset .3rem .6rem .1rem .1rem rgba(0, 0, 0, 0.1);
+}
+.two--inset--heavy {
+  box-shadow: inset .3rem .6rem .1rem .1rem rgba(0, 0, 0, 0.3);
+}
+
+.three--inset--light {
+  box-shadow: inset .6rem .6rem .1rem .1rem rgba(0, 0, 0, 0.08);
+}
+.three--inset--medium {
+  box-shadow: inset .6rem .6rem .1rem .1rem rgba(0, 0, 0, 0.1);
+}
+.three--inset--heavy {
+  box-shadow: inset .6rem .6rem .1rem .1rem rgba(0, 0, 0, 0.3);
+}

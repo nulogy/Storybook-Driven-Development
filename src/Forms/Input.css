@@ -1,11 +1,11 @@
 .input {
   composes: fontSize--normal from "~/Atoms/Type.css";
   composes: light from "~/Atoms/Borders.css";
+  composes: one--inset--light from "~/Atoms/Borders.css";
   border-color: black;
   line-height: 3.8rem;
   height: 4rem;
   padding: 0 1.5rem;
-  box-shadow: inset .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.08);
   background-color: white;
   width: 100%;
 }
