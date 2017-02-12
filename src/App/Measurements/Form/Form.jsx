@@ -58,7 +58,7 @@ const MeasurementForm = ({measurementType = "milestone"}) => (
       </div>
     }
 
-  <div className={styles.actions}>
+    <div className={styles.actions}>
       <Button name="cancel">Cancel</Button>
       <Button name="save" submit>Save interval</Button>
     </div>
