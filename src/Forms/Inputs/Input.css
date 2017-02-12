@@ -1,7 +1,6 @@
 .input {
   composes: fontSize--normal from "~/Atoms/Type.css";
   composes: light from "~/Atoms/Borders.css";
-  composes: one--inset--light from "~/Atoms/Borders.css";
   border-color: black;
   line-height: 3.8rem;
   height: 4rem;
@@ -21,8 +20,13 @@
   composes: input;
 }
 
+.inputText {
+  composes: one--inset--light from "~/Atoms/Shadows.css";
+}
+
 .inputSelect {
   appearance: none;
+  composes: one--light from "~/Atoms/Shadows.css";
   background-image: url("./Select/select-arrow.svg");
   background-position: 100% 50%;
   background-repeat: no-repeat;
