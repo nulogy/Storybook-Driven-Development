@@ -1,7 +1,8 @@
 .label {
   composes: label from "./Label.css";
+  font-size: 1.6rem;
   font-weight: normal;
-  margin: 0;
+  margin: 0 0 1rem;
   padding: 0;
 }
 .disabledLabel {

@@ -24,8 +24,8 @@
 .fontWeight--light    { font-weight: 300; }
 .fontWeight           { font-weight: 400; }
 .fontWeight--normal   { composes: fontWeight; }
-.fontWeight--heavy    { font-weight: 600; }
-.fontWeight--bold     { font-weight: 800; }
+.fontWeight--heavy    { font-weight: 500; }
+.fontWeight--bold     { font-weight: 600; }
 
 
 .micro    { composes: fontSize--micro lineHeight--micro; }

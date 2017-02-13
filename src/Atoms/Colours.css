@@ -5,7 +5,7 @@
   --colour-grey-light: #eee;
   --colour-white: #fff;
   --colour-blue: #0096FF;
-  --colour-blue-light: rgb(128, 203, 255);
+  --colour-blue-light: #80cbff;
   --transition-duration: .15;
 }
 
@@ -71,7 +71,7 @@
 .colour__button--submit:disabled {
   background-color: var(--colour-grey);
   border-color: var(--colour-grey);
-  color: var(--colour-grey-light); 
+  color: var(--colour-grey-light);
 }
 
 .colour__input {
