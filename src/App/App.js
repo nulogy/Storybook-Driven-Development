@@ -11,9 +11,9 @@ class App extends Component {
           <img src={logo} className={styles.logo} alt="logo" />
           <h1 className={styles.title}>Styleguide Driven Developement</h1>
         </div>
-        <p className={styles.content}>
+        <div className={styles.content}>
           <IntervalForm />
-        </p>
+        </div >
       </div>
     );
   }
