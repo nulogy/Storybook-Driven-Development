@@ -32,7 +32,7 @@ const Box = ({className, inverse = false, border = false}) => (
   <div className={colours[className]} style={boxStyle(inverse, border)}>{className}</div>);
 
 export default function ColoursStory() {
-  storiesOf('Colours', module)
+  storiesOf('⭐️ Colours', module)
     .add('text colours', () => (
       <div>
         <Text className="colour__text--black" />
@@ -41,6 +41,7 @@ export default function ColoursStory() {
         <Text className="colour__text--grey-light" />
         <Text className="colour__text--white" inverse />
         <Text className="colour__text--blue" />
+        <Text className="colour__text--blue-light" />
       </div>
     ))
     .add('backgrounds', () => (
@@ -51,6 +52,7 @@ export default function ColoursStory() {
         <Box className="colour__background--grey-light" inverse />
         <Box className="colour__background--white" />
         <Box className="colour__background--blue" inverse />
+        <Box className="colour__background--blue-light" inverse />
       </div>
     ))
     .add('borders', () => (
@@ -61,6 +63,7 @@ export default function ColoursStory() {
         <Box className="colour__border--grey-light" border />
         <Box className="colour__border--white" border />
         <Box className="colour__border--blue" border />
+        <Box className="colour__border--blue-light" border />
       </div>
     ));
 }

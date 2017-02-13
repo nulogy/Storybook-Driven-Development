@@ -5,6 +5,7 @@
   --colour-grey-light: #eee;
   --colour-white: #fff;
   --colour-blue: #0096FF;
+  --colour-blue-light: rgb(128, 203, 255);
 }
 
 .colour__text--black      { color: var(--colour-black); }
@@ -13,6 +14,7 @@
 .colour__text--grey-light { color: var(--colour-grey-light); }
 .colour__text--white      { color: var(--colour-white); }
 .colour__text--blue       { color: var(--colour-blue); }
+.colour__text--blue-light { color: var(--colour-blue-light); }
 
 .colour__background--black      { background-color: var(--colour-black); }
 .colour__background--grey-dark  { background-color: var(--colour-grey-dark); }
@@ -20,6 +22,7 @@
 .colour__background--grey-light { background-color: var(--colour-grey-light); }
 .colour__background--white      { background-color: var(--colour-white); }
 .colour__background--blue       { background-color: var(--colour-blue); }
+.colour__background--blue-light { background-color: var(--colour-blue-light); }
 
 .colour__border--black      { border-color: var(--colour-black); }
 .colour__border--grey-dark  { border-color: var(--colour-grey-dark); }
@@ -27,3 +30,14 @@
 .colour__border--grey-light { border-color: var(--colour-grey-light); }
 .colour__border--white      { border-color: var(--colour-white); }
 .colour__border--blue       { border-color: var(--colour-blue); }
+.colour__border--blue-light { border-color: var(--colour-blue-light); }
+
+.colour__link-underline {
+  composes: colour__text--black;
+  box-shadow: inset 0 -.5em var(--colour-blue-light);
+  transition: box-shadow .3s;
+  text-decoration: none;
+}
+.colour__link-underline:hover {
+  box-shadow: inset 0 -2em var(--colour-blue-light);
+}
