@@ -7,11 +7,7 @@
   padding: 0 1.5rem;
 }
 .button:disabled {
-  opacity: .5;
   pointer-events: none;
-  color: #aaa;
-  border-color: #aaa;
-  background-color: #eee;
 }
 
 .button + .button {
@@ -20,27 +16,10 @@
 
 .normal {
   composes: button;
-  background-color: white;
-  border-color: black;
-  color: black;
-}
-.normal:hover {
-  background-color: black;
-  color: white;
+  composes: colour__button from "~/Atoms/Colours.css";
 }
 
 .submit {
   composes: button;
-  background-color: black;
-  border-color: black;
-  color: white;
-}
-.submit:disabled {
-  color: #eee;
-  border-color: #aaa;
-  background-color: #aaa;
-}
-.submit:hover {
-  background-color: white;
-  color: black;
+  composes: colour__button--submit from "~/Atoms/Colours.css";
 }
