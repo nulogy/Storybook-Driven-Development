@@ -73,3 +73,31 @@
   border-color: var(--colour-grey);
   color: var(--colour-grey-light); 
 }
+
+.colour__input {
+  background-color: var(--colour-white);
+  border-color: var(--colour-black);
+  color: var(--colour-black);
+  transition-property: border-color, background-color, color;
+  transition-duration: var(--transition-duration);
+}
+.colour__input::placeholder {
+  color: var(--colour-grey);
+}
+.colour__input:disabled {
+  opacity: .5;
+  background-color: var(--colour-grey-light);
+  border-color: var(--colour-grey);
+}
+.colour__input:hover,
+.colour__input:hover::placeholder {
+  color: var(--colour-blue);
+  border-color: var(--colour-blue);
+}
+.colour__input:focus {
+  color: var(--colour-black);
+  border-color: var(--colour-blue);
+}
+.colour__input:focus::placeholder {
+  color: var(--colour-grey);
+}
