@@ -10,7 +10,7 @@ class FormController extends Component {
     this.state = {
       interval_name: "",
       start_milestone: "",
-      end_milestone: "po_due"
+      end_milestone: ""
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -20,7 +20,7 @@ class FormController extends Component {
     const target = event.target;
     const value = target.value;
     const name = target.name;
-    
+
     this.setState({
       [name]: value
     });
