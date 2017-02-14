@@ -35,8 +35,8 @@ describe("FormController", () => {
     });
 
     it("updates state with the name and value of the target recieved in the event", () => {
-      expect(subject.state().interval_name).toBeNull();
-      expect(subject.find("Mock").props().interval_name).toBeNull();
+      expect(subject.state().interval_name).toBe("");
+      expect(subject.find("Mock").props().interval_name).toBe("");
 
       const mockEvent = {
         target: {
