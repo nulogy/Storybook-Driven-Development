@@ -33,6 +33,7 @@
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.2",
     "jest": "17.0.2",
+    "jest-webpack-alias": "^3.3.3",
     "json-loader": "0.5.4",
     "object-assign": "4.1.0",
     "path-exists": "2.1.0",
@@ -74,7 +75,7 @@
     "testEnvironment": "node",
     "testURL": "http://localhost",
     "transform": {
-      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.(js|jsx)$": "<rootDir>/config/jest/jsTransform.js",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
@@ -84,6 +85,9 @@
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     }
+  },
+  "jest-webpack-alias": {
+    "configFile": "config/webpack.config.dev.js"
   },
   "babel": {
     "presets": [

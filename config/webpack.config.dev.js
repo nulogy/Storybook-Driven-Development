@@ -81,7 +81,8 @@ module.exports = {
       'react-native': 'react-native-web',
       // clean up noisy back links in imports
       "~": paths.appSrc
-    }
+    },
+    root: [paths.appSrc],
   },
 
   module: {
