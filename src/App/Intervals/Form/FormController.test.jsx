@@ -3,18 +3,22 @@ import { shallow } from "enzyme";
 import keys from "lodash/keys";
 import FormController from "./FormController";
 
-describe("FormController", () => {
+describe("Interval FormController", () => {
+  let subject;
   const Mock = props => <span>{ props.children }</span>;
-  const subject = shallow(
-    <FormController>
-      <Mock />
-    </FormController>
-  );
   const child = () => subject.find("Mock");
   const expectStateAndPropsToMatch = (key, value) => {
     expect(subject.state()[key]).toBe(value);
     expect(child().props()[key]).toBe(value);
   }
+
+  beforeEach(() => {
+    subject = shallow(
+      <FormController>
+        <Mock />
+      </FormController>
+    );
+  });
 
   describe("form values", () => {
     const expectedFormNames = expect.arrayContaining([

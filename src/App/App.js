@@ -16,7 +16,7 @@ class App extends Component {
           <IntervalFormController>
             <IntervalForm />
           </IntervalFormController>
-        </div >
+        </div>
       </div>
     );
   }
