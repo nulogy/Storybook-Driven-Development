@@ -4,12 +4,17 @@ import keys from "lodash/keys";
 import FormController from "./FormController";
 
 describe("FormController", () => {
-  const Mock = props => <span>{ props.children }</span>
+  const Mock = props => <span>{ props.children }</span>;
   const subject = shallow(
     <FormController>
       <Mock />
     </FormController>
   );
+  const child = () => subject.find("Mock");
+  const expectStateAndPropsToMatch = (key, value) => {
+    expect(subject.state()[key]).toBe(value);
+    expect(child().props()[key]).toBe(value);
+  }
 
   describe("form values", () => {
     const expectedFormNames = expect.arrayContaining([
@@ -23,7 +28,7 @@ describe("FormController", () => {
     });
 
     it("passes required form values to children", () => {
-      expect(keys(subject.find("Mock").props()))
+      expect(keys(child().props()))
         .toEqual(expectedFormNames);
     });
   });
@@ -31,12 +36,11 @@ describe("FormController", () => {
   describe("handleChange", () => {
     it("passes a handleChange callback to it's children", () => {
       expect(subject.instance().handleChange).toBeInstanceOf(Function);
-      expect(subject.find("Mock").prop("handleChange")).toBe(subject.instance().handleChange);
+      expect(child().prop("handleChange")).toBe(subject.instance().handleChange);
     });
 
     it("updates state with the name and value of the target recieved in the event", () => {
-      expect(subject.state().interval_name).toBe("");
-      expect(subject.find("Mock").props().interval_name).toBe("");
+      expectStateAndPropsToMatch("interval_name", "");
 
       const mockEvent = {
         target: {
@@ -44,10 +48,9 @@ describe("FormController", () => {
           value: "changed value"
         }
       };
-      const result = subject.instance().handleChange(mockEvent);
+      subject.instance().handleChange(mockEvent);
 
-      expect(subject.state().interval_name).toBe("changed value");
-      expect(subject.find("Mock").props().interval_name).toBe("changed value");
+      expectStateAndPropsToMatch("interval_name", "changed value");
     });
   });
 });
