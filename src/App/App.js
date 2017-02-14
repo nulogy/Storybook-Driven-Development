@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import styles from "./App.css";
+import IntervalFormController from "./Intervals/Form/FormController";
 import IntervalForm from "./Intervals/Form";
 
 class App extends Component {
@@ -12,7 +13,9 @@ class App extends Component {
           <h1 className={styles.title}>Styleguide Driven Developement</h1>
         </div>
         <div className={styles.content}>
-          <IntervalForm />
+          <IntervalFormController>
+            <IntervalForm />
+          </IntervalFormController>
         </div >
       </div>
     );

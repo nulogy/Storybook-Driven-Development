@@ -10,6 +10,7 @@ const SelectField = ({
   disabled = false,
   label,
   name,
+  onChange,
   options,
   value,
 }) => (
@@ -20,6 +21,7 @@ const SelectField = ({
       id={name}
       name={name}
       value={value}
+      onChange={onChange}
     >
       { mapOptions(options) }
     </select>
@@ -30,6 +32,7 @@ SelectField.propTypes = {
   disabled: PropTypes.bool,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string.isRequired,

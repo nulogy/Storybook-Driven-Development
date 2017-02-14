@@ -8,17 +8,19 @@ class FormController extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      interval_name: null,
-      start_milestone: null,
-      end_milestone: null
+      interval_name: "",
+      start_milestone: "",
+      end_milestone: "po_due"
     };
+
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
     const target = event.target;
     const value = target.value;
     const name = target.name;
-
+    
     this.setState({
       [name]: value
     });
