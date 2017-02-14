@@ -10,16 +10,15 @@ class FormController extends Component {
     this.state = {
       interval_name: "",
       start_milestone: "",
-      end_milestone: ""
+      end_milestone: "",
+      measurementType: "milestone",
     };
 
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
+    const { name, value } = event.target;
 
     this.setState({
       [name]: value

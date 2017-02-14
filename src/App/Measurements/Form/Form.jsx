@@ -20,7 +20,7 @@ const MeasurementForm = ({
   start_milestone,
   end_milestone,
   handleChange,
-  measurementType = "milestone"
+  measurementType,
 }) => (
   <form>
     <h2 className={styles.title}>Create a new measurement</h2>
@@ -34,9 +34,10 @@ const MeasurementForm = ({
 
     <RadioField
       label="Select a measurement type"
-      name="measurement_type"
+      name="measurementType"
       value={measurementType}
       options={measurementTypes}
+      onChange={handleChange}
     />
 
     { measurementType === "milestone" ?

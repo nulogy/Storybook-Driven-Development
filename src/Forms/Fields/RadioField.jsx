@@ -4,10 +4,18 @@ import styles from "../Radio.css";
 
 const isChecked = (value, chosenValue) => value === chosenValue;
 
-const mapOptions = (options, chosenValue) => ( options.map(
+const mapOptions = (name, options, chosenValue, onChange) => ( options.map(
   ({text, value, disabled = false}) => (
     <label className={styles[disabled ? "disabledLabel" : "label"]} key={value}>
-      <input className={styles.radio} type="radio" value={value} checked={isChecked(value, chosenValue)} disabled={disabled} />
+      <input
+        className={styles.radio}
+        type="radio"
+        name={name}
+        value={value}
+        checked={isChecked(value, chosenValue)}
+        disabled={disabled}
+        onChange={onChange}
+      />
       { text ? text : value }
     </label>
   )
@@ -17,16 +25,19 @@ const RadioField = ({
   disabled = false,
   label,
   name,
+  onChange,
   options,
   value,
 }) => {
   return (
     <Field name={name} label={label}>
-      { mapOptions(options, value) }
+      { mapOptions(name, options, value, onChange) }
     </Field>
   );
 };
 
-RadioField.propTypes = {};
+RadioField.propTypes = {
+  onChange: PropTypes.func,
+};
 
 export default RadioField;
