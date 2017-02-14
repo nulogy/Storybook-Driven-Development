@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropTypes } from "react";
 import Button from "~/Button";
 import styles from "~/Forms/Form.css";
 import TextField from "~/Forms/Fields/TextField";
@@ -47,5 +47,12 @@ const IntervalForm = ({
     </div>
   </form>
 );
+
+IntervalForm.propTypes = {
+  interval_name: PropTypes.string,
+  start_milestone: PropTypes.string,
+  end_milestone: PropTypes.string,
+  handleChange: PropTypes.func,
+}
 
 export default IntervalForm;

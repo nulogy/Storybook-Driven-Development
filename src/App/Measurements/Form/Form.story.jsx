@@ -1,18 +1,26 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import Form from './Form';
 import FormController from './FormController';
 
 export default function FormStory() {
+  const props = {
+    interval_name: "",
+    start_milestone: "",
+    end_milestone: "",
+    measurementType: "",
+    handleChange: action("handleChange"),
+  }
+
   storiesOf('Measurement Form', module)
     .add('default', () => (
-      <Form />
+      <Form {...props} />
     ))
     .add('Interval selected', () => (
-      <Form measurementType="interval" />
+      <Form {...props} measurementType="interval" />
     ))
     .add('Milestone selected', () => (
-      <Form measurementType="milestone" />
+      <Form {...props} measurementType="milestone" />
     ))
     .add('interactive with Form Controller', () => (
       <FormController>

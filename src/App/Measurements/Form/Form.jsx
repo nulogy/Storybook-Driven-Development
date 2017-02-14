@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropTypes } from "react";
 import Button from "~/Button";
 import styles from "~/Forms/Form.css";
 import RadioField from "~/Forms/Fields/RadioField";
@@ -75,5 +75,13 @@ const MeasurementForm = ({
     </div>
   </form>
 );
+
+MeasurementForm.propTypes = {
+  interval_name: PropTypes.string,
+  start_milestone: PropTypes.string,
+  end_milestone: PropTypes.string,
+  measurementType: PropTypes.string,
+  handleChange: PropTypes.func,
+}
 
 export default MeasurementForm;
