@@ -15,13 +15,21 @@ const measurementTypes = [
   { value: "interval", text: "An interval between two points" },
 ];
 
-const MeasurementForm = ({measurementType = "milestone"}) => (
+const MeasurementForm = ({
+  interval_name,
+  start_milestone,
+  end_milestone,
+  handleChange,
+  measurementType = "milestone"
+}) => (
   <form>
     <h2 className={styles.title}>Create a new measurement</h2>
 
     <TextField
-      name="measurement_name"
+      name="interval_name"
+      value={interval_name}
       label="Name your measuremnt"
+      onChange={handleChange}
     />
 
     <RadioField
@@ -34,10 +42,11 @@ const MeasurementForm = ({measurementType = "milestone"}) => (
     { measurementType === "milestone" ?
       <div>
         <SelectField
-          name="milestone"
+          name="start_milestone"
           label="Select a milestone"
-          value="plv_available"
+          value={start_milestone}
           options={options}
+          onChange={handleChange}
         />
       </div>
     :
@@ -45,15 +54,17 @@ const MeasurementForm = ({measurementType = "milestone"}) => (
         <SelectField
           name="start_milestone"
           label="Select start milestone"
-          value="plv_available"
+          value={start_milestone}
           options={options}
+          onChange={handleChange}
         />
 
         <SelectField
           name="end_milestone"
           label="Select end milestone"
-          value="po_due"
+          value={end_milestone}
           options={options}
+          onChange={handleChange}
         />
       </div>
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import Form from './Form';
+import FormController from './FormController';
 
 export default function FormStory() {
   storiesOf('Measurement Form', module)
@@ -12,5 +13,10 @@ export default function FormStory() {
     ))
     .add('Milestone selected', () => (
       <Form measurementType="milestone" />
+    ))
+    .add('interactive with Form Controller', () => (
+      <FormController>
+        <Form />
+      </FormController>
     ));
 }
