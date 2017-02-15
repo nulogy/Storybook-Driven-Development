@@ -1,11 +1,19 @@
 import React, { PropTypes } from "react";
-import styles from "./Radio.css";
+import styleProp from "~/utils/PropTypes/styleProp";
+import baseStyles from "./Radio.css";
 
 const isChecked = (value, chosenValue) => value === chosenValue;
 
 const isDisabled = (disabled, allDisabled) => (disabled === true || allDisabled === true);
 
-const mapOptions = (name, options, chosenValue, allDisabled, onChange) => ( options.map(
+const mapOptions = (
+  name,
+  options,
+  chosenValue,
+  styles,
+  allDisabled,
+  onChange
+) => ( options.map(
   ({text, value, disabled = false}) => (
     <label className={styles[isDisabled(disabled, allDisabled) ? "disabledLabel" : "label"]} key={value}>
       <input
@@ -27,10 +35,11 @@ const RadioGroup = ({
   name,
   onChange,
   options,
+  theme,
   value,
 }) => (
   <div>
-    { mapOptions(name, options, value, disabled, onChange) }
+    { mapOptions(name, options, value, Object.assign({}, baseStyles, theme), disabled, onChange) }
   </div>
 );
 
@@ -44,6 +53,7 @@ RadioGroup.propTypes = {
       text: PropTypes.string,
     })
   ).isRequired,
+  theme: styleProp(baseStyles),
   value: PropTypes.string,
 };
 
