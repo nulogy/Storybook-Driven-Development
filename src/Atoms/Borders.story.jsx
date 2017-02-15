@@ -7,7 +7,7 @@ const Box = ({className}) => (
       textAlign: "center",
       padding: "2rem",
       height: "6rem",
-      marginBottom: "2rem"
+      marginBottom: "2rem",
   }}>{className}</div>);
 
 export default function BordersStory() {

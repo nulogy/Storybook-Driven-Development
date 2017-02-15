@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import SelectField from './SelectField';
 
 export default function SelectFieldStory() {
@@ -12,6 +12,7 @@ export default function SelectFieldStory() {
     label: "a label",
     name: "name",
     options,
+    onChange: action("onChange"),
   }
 
   storiesOf('❤️ SelectField', module)
