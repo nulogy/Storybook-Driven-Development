@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import logo from "./nulogy_logo.svg";
 import styles from "./App.css";
 import IntervalFormController from "./Intervals/Form/FormController";
 import IntervalForm from "./Intervals/Form";
