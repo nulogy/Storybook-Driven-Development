@@ -76,7 +76,7 @@
     ],
     "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
     "testPathIgnorePatterns": [
-      "<rootDir>[/\\\\](build|docs|node_modules)[/\\\\]"
+      "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
     ],
     "testEnvironment": "node",
     "testURL": "http://localhost",
