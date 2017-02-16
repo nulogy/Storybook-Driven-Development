@@ -37,7 +37,11 @@ const RadioField = ({
 };
 
 RadioField.propTypes = {
-  onChange: PropTypes.func,
+  value: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  disabled: PropTypes.bool,
+  options: PropTypes.array,
+  onChange: PropTypes.func
 };
 
 export default RadioField;
