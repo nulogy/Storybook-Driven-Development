@@ -5,7 +5,7 @@ const Button = ({
   children,
   disabled = false,
   name,
-  submit = false
+  submit = false,
 }) => (
   <button
     className={styles[submit ? "submit" : "normal"]}

@@ -11,11 +11,11 @@ const Text = ({className, inverse = false}) => (
 
 const boxStyle = (isInverse, border) => {
   let style = {
-      textAlign: "center",
-      color: "black",
-      padding: "2rem",
-      height: "6rem",
-      marginBottom: "2rem"
+    textAlign: "center",
+    color: "black",
+    padding: "2rem",
+    height: "6rem",
+    marginBottom: "2rem"
   };
   if (isInverse === true) {
     style = Object.assign(style, { color: "white"});

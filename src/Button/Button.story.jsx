@@ -5,7 +5,8 @@ import Button from './Button';
 export default function ButtonStory() {
   const props = {
     name: "button",
-  }
+  };
+  
   storiesOf('❤️ Button', module)
     .add('default', () => (
       <Button {...props}>Click me</Button>

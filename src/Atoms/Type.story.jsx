@@ -61,7 +61,7 @@ export default function MyComponentStory() {
       <div>
         <p className={type["fontWeight--hairline"]}>fontWeight--hairline</p>
         <p className={type["fontWeight--light"]}>fontWeight--light</p>
-        <p className={type["fontWeight"]}>fontWeight / fontWeight--normal</p>
+        <p className={type["fontWeight--normal"]}>fontWeight / fontWeight--normal</p>
         <p className={type["fontWeight--heavy"]}>fontWeight--heavy</p>
         <p className={type["fontWeight--bold"]}>fontWeight--bold</p>
       </div>

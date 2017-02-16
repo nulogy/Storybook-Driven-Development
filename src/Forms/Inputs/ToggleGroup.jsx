@@ -4,7 +4,7 @@ import styles from "./Toggle.css";
 
 const ToggleGroup = ({ ...radioProps }) => (
   <RadioGroup {...radioProps} theme={styles} />
-)
+);
 
 ToggleGroup.propTypes = {};
 

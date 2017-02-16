@@ -2,13 +2,17 @@ import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import shadows from './Shadows.css';
 
-const Box = ({className}) => (
-  <div className={shadows[className]} style={{
-      "text-align": "center",
+const Box = ({ className }) => (
+  <div
+    className={shadows[className]}
+    style={{
+      textAlign: "center",
       padding: "2rem",
       height: "6rem",
-      "margin-bottom": "2rem"
-  }}>{className}</div>);
+      marginBottom: "2rem",
+    }}
+  >{className}</div>
+);
 
 export default function ShadowsStory() {
   storiesOf('⭐️ Shadows', module)
