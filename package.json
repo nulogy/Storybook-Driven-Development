@@ -48,6 +48,9 @@
     "recursive-readdir": "2.1.0",
     "strip-ansi": "3.0.1",
     "style-loader": "0.13.1",
+    "stylelint": "^7.8.0",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-webpack-plugin": "^0.6.0",
     "url-loader": "0.5.7",
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
@@ -65,11 +68,16 @@
     "build": "node scripts/build.js",
     "pretest": "yarn lint",
     "test": "node scripts/test.js --env=jsdom",
-    "lint": "eslint src/**/*.{js,jsx}",
-    "lint-fix": "eslint src/**/*.{js,jsx} --fix",
+    "lint": "yarn lint:css && yarn lint:js",
+    "lint:css": "stylelint **/*.css",
+    "lint:js": "eslint src/**/*.{js,jsx}",
+    "lint:fix": "eslint src/**/*.{js,jsx} --fix",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "storybook-to-ghpages"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
   },
   "jest": {
     "collectCoverageFrom": [
