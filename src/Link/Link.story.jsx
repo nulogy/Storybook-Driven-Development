@@ -8,6 +8,6 @@ export default function LinkStory() {
       <p>This is <Link to="http://theinterned.net">a link</Link> with a text `to` prop.</p>
     ))
     .add('with a click handler', () => (
-      <p>This is <Link to={action("to click")}>a link</Link> with a callback `to` prop.</p>
+      <p>This is <Link to={action('to click')}>a link</Link> with a callback `to` prop.</p>
     ));
 }

@@ -4,20 +4,20 @@ import Button from './Button';
 
 export default function ButtonStory() {
   const props = {
-    name: "button",
+    name: 'button',
   };
-  
+
   storiesOf('❤️ Button', module)
     .add('default', () => (
       <Button {...props}>Click me</Button>
     ))
     .add('submit', () => (
-      <Button  {...props} submit>Submit me</Button>
+      <Button {...props} submit>Submit me</Button>
     ))
     .add('disabled', () => (
       <Button {...props} disabled>Click me</Button>
     ))
     .add('disabled submit', () => (
-      <Button  {...props} submit disabled>Submit me</Button>
+      <Button {...props} submit disabled>Submit me</Button>
     ));
 }

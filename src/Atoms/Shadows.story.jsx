@@ -6,10 +6,10 @@ const Box = ({ className }) => (
   <div
     className={shadows[className]}
     style={{
-      textAlign: "center",
-      padding: "2rem",
-      height: "6rem",
-      marginBottom: "2rem",
+      textAlign: 'center',
+      padding: '2rem',
+      height: '6rem',
+      marginBottom: '2rem',
     }}
   >{className}</div>
 );

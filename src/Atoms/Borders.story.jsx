@@ -2,13 +2,15 @@ import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import borders from './Borders.css';
 
-const Box = ({className}) => (
-  <div className={borders[className]} style={{
-      textAlign: "center",
-      padding: "2rem",
-      height: "6rem",
-      marginBottom: "2rem",
-  }}>{className}</div>);
+const Box = ({ className }) => (
+  <div
+    className={borders[className]} style={{
+      textAlign: 'center',
+      padding: '2rem',
+      height: '6rem',
+      marginBottom: '2rem',
+    }}
+  >{className}</div>);
 
 export default function BordersStory() {
   storiesOf('⭐️ Borders', module)
