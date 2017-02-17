@@ -69,7 +69,7 @@
     "pretest": "yarn lint",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "yarn lint:css && yarn lint:js",
-    "lint:css": "stylelint **/*.css",
+    "lint:css": "stylelint src/**/*.css",
     "lint:js": "eslint src/**/*.{js,jsx}",
     "lint:fix": "eslint src/**/*.{js,jsx} --fix",
     "storybook": "start-storybook -p 9009 -s public",

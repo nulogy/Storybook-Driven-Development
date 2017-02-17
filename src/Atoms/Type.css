@@ -1,13 +1,13 @@
-.fontSize--base   { font-size: .8rem; }
+.fontSize--base   { font-size: 0.8rem; }
 
 .fontSize--micro    { composes: fontSize--base; }
 .fontSize--tiny     { font-size: 1.2rem; }
 .fontSize--small    { font-size: 1.4rem; }
 .fontSize--normal   { font-size: 1.6rem; }
 .fontSize--large    { font-size: 1.8rem; }
-.fontSize--xlarge   { font-size: 2.4rem }
-.fontSize--xxlarge  { font-size: 3.2rem }
-.fontSize--huge     { font-size: 4.0rem; }
+.fontSize--xlarge   { font-size: 2.4rem; }
+.fontSize--xxlarge  { font-size: 3.2rem; }
+.fontSize--huge     { font-size: 4rem; }
 .fontSize--giant    { font-size: 4.8rem; }
 .fontSize--titanic  { font-size: 6.4rem; }
 
@@ -27,7 +27,6 @@
 .fontWeight--heavy    { font-weight: 500; }
 .fontWeight--bold     { font-weight: 600; }
 
-
 .micro    { composes: fontSize--micro lineHeight--micro; }
 .tiny     { composes: fontSize--tiny lineHeight; }
 .small    { composes: fontSize--small lineHeight; }
@@ -39,9 +38,22 @@
 .giant    { composes: fontSize--giant lineHeight--large; }
 .titanic  { composes: fontSize--titanic lineHeight--large; }
 
-.h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .large, .normal, .small, .tiny {
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.h7,
+.h8,
+.large,
+.normal,
+.small,
+.tiny {
   composes: lineBreak fontWeight--bold;
 }
+
 .micro {
   composes: lineBreak--small;
 }

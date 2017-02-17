@@ -6,6 +6,7 @@
   height: 4rem;
   padding: 0 1.5rem;
 }
+
 .button:disabled {
   pointer-events: none;
 }

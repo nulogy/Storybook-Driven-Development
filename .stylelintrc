@@ -5,6 +5,7 @@
       "ignoreProperties": [
         "composes"
       ]
-    }]
+    }],
+    "block-opening-brace-space-before": "always-multi-line"
   }
 }

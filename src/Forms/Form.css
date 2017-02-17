@@ -1,7 +1,7 @@
 .title {
   composes: xlarge from "~/Atoms/Type.css";
   composes: light--bottom--sharp from "~/Atoms/Borders.css";
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
   margin-bottom: 2.5rem;
 }
 
