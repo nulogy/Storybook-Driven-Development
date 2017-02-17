@@ -1,159 +1,103 @@
-.borderWidth--light {
-  border-width: 0.1rem;
+:root {
+  --colour-black: #000;
+  --colour-grey-dark: #555;
+  --colour-grey: #aaa;
+  --colour-grey-light: #eee;
+  --colour-white: #fff;
+  --colour-blue: #0096FF;
+  --colour-blue-light: #80cbff;
+  --transition-duration: .15;
 }
 
-.borderWidth--medium {
-  border-width: 0.2rem;
+.colour__text--black      { color: var(--colour-black); }
+.colour__text--grey-dark  { color: var(--colour-grey-dark); }
+.colour__text--grey       { color: var(--colour-grey); }
+.colour__text--grey-light { color: var(--colour-grey-light); }
+.colour__text--white      { color: var(--colour-white); }
+.colour__text--blue       { color: var(--colour-blue); }
+.colour__text--blue-light { color: var(--colour-blue-light); }
+
+.colour__background--black      { background-color: var(--colour-black); }
+.colour__background--grey-dark  { background-color: var(--colour-grey-dark); }
+.colour__background--grey       { background-color: var(--colour-grey); }
+.colour__background--grey-light { background-color: var(--colour-grey-light); }
+.colour__background--white      { background-color: var(--colour-white); }
+.colour__background--blue       { background-color: var(--colour-blue); }
+.colour__background--blue-light { background-color: var(--colour-blue-light); }
+
+.colour__border--black      { border-color: var(--colour-black); }
+.colour__border--grey-dark  { border-color: var(--colour-grey-dark); }
+.colour__border--grey       { border-color: var(--colour-grey); }
+.colour__border--grey-light { border-color: var(--colour-grey-light); }
+.colour__border--white      { border-color: var(--colour-white); }
+.colour__border--blue       { border-color: var(--colour-blue); }
+.colour__border--blue-light { border-color: var(--colour-blue-light); }
+
+.colour__link-underline {
+  composes: colour__text--black;
+  box-shadow: inset 0 -.5em var(--colour-blue-light);
+  transition: box-shadow .3s;
+  text-decoration: none;
+}
+.colour__link-underline:hover {
+  box-shadow: inset 0 -2em var(--colour-blue-light);
 }
 
-.borderWidth--heavy {
-  border-width: 0.3rem;
+.colour__button {
+  background-color: var(--colour-white);
+  border-color: var(--colour-black);
+  color: var(--colour-black);
+  transition-property: border-color, background-color, color;
+  transition-duration: var(--transition-duration);
+}
+.colour__button:disabled {
+  opacity: .5;
+  background-color: var(--colour-grey-light);
+  border-color: var(--colour-grey);
+  color: var(--colour-grey);
+}
+.colour__button:hover {
+  color: var(--colour-white);
+  border-color: var(--colour-blue);
+  background-color: var(--colour-blue);
 }
 
-.borderStyle {
-  border-style: solid;
+.colour__button--submit {
+  composes: colour__button;
+  background-color: var(--colour-black);
+  border-color: var(--colour-black);
+  color: var(--colour-white);
+}
+.colour__button--submit:disabled {
+  background-color: var(--colour-grey);
+  border-color: var(--colour-grey);
+  color: var(--colour-grey-light);
 }
 
-.borderRadius {
-  border-radius: 0.3rem;
+.colour__input {
+  background-color: var(--colour-white);
+  border-color: var(--colour-black);
+  color: var(--colour-black);
+  transition-property: border-color, background-color, color;
+  transition-duration: var(--transition-duration);
 }
-
-.borderRadius--sharp {
-  border-radius: 0;
+.colour__input::placeholder {
+  color: var(--colour-grey);
 }
-
-.light {
-  composes: borderWidth--light borderStyle borderRadius;
+.colour__input:disabled {
+  opacity: .5;
+  background-color: var(--colour-grey-light);
+  border-color: var(--colour-grey);
 }
-
-.medium {
-  composes: borderWidth--medium borderStyle borderRadius;
+.colour__input:hover,
+.colour__input:hover::placeholder {
+  color: var(--colour-blue);
+  border-color: var(--colour-blue);
 }
-
-.heavy {
-  composes: borderWidth--heavy borderStyle borderRadius;
+.colour__input:focus {
+  color: var(--colour-black);
+  border-color: var(--colour-blue);
 }
-
-.light--sharp {
-  composes: borderWidth--light borderStyle borderRadius--sharp;
-}
-
-.medium--sharp {
-  composes: borderWidth--medium borderStyle borderRadius--sharp;
-}
-
-.heavy--sharp {
-  composes: borderWidth--heavy borderStyle borderRadius--sharp;
-}
-
-.borderWidth--top--light {
-  border-top-width: 0.1rem;
-}
-
-.borderWidth--top--medium {
-  border-top-width: 0.2rem;
-}
-
-.borderWidth--top--heavy {
-  border-top-width: 0.3rem;
-}
-
-.borderStyle--top {
-  border-top-style: solid;
-}
-
-.light--top--sharp {
-  composes: borderWidth--top--light borderStyle--top borderRadius--sharp;
-}
-
-.medium--top--sharp {
-  composes: borderWidth--top--medium borderStyle--top borderRadius--sharp;
-}
-
-.heavy--top--sharp {
-  composes: borderWidth--top--heavy borderStyle--top borderRadius--sharp;
-}
-
-.borderWidth--bottom--light {
-  border-bottom-width: 0.1rem;
-}
-
-.borderWidth--bottom--medium {
-  border-bottom-width: 0.2rem;
-}
-
-.borderWidth--bottom--heavy {
-  border-bottom-width: 0.3rem;
-}
-
-.borderStyle--bottom {
-  border-bottom-style: solid;
-}
-
-.light--bottom--sharp {
-  composes: borderWidth--bottom--light borderStyle--bottom borderRadius--sharp;
-}
-
-.medium--bottom--sharp {
-  composes: borderWidth--bottom--medium borderStyle--bottom borderRadius--sharp;
-}
-
-.heavy--bottom--sharp {
-  composes: borderWidth--bottom--heavy borderStyle--bottom borderRadius--sharp;
-}
-
-.borderWidth--left--light {
-  border-left-width: 0.1rem;
-}
-
-.borderWidth--left--medium {
-  border-left-width: 0.2rem;
-}
-
-.borderWidth--left--heavy {
-  border-left-width: 0.3rem;
-}
-
-.borderStyle--left {
-  border-left-style: solid;
-}
-
-.light--left--sharp {
-  composes: borderWidth--left--light borderStyle--left borderRadius--sharp;
-}
-
-.medium--left--sharp {
-  composes: borderWidth--left--medium borderStyle--left borderRadius--sharp;
-}
-
-.heavy--left--sharp {
-  composes: borderWidth--left--heavy borderStyle--left borderRadius--sharp;
-}
-
-.borderWidth--right--light {
-  border-right-width: 0.1rem;
-}
-
-.borderWidth--right--medium {
-  border-right-width: 0.2rem;
-}
-
-.borderWidth--right--heavy {
-  border-right-width: 0.3rem;
-}
-
-.borderStyle--right {
-  border-right-style: solid;
-}
-
-.light--right--sharp {
-  composes: borderWidth--right--light borderStyle--right borderRadius--sharp;
-}
-
-.medium--right--sharp {
-  composes: borderWidth--right--medium borderStyle--right borderRadius--sharp;
-}
-
-.heavy--right--sharp {
-  composes: borderWidth--right--heavy borderStyle--right borderRadius--sharp;
+.colour__input:focus::placeholder {
+  color: var(--colour-grey);
 }

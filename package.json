@@ -22,7 +22,6 @@
     "enzyme": "^2.7.1",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
-    "eslint-config-react-app": "^0.5.0",
     "eslint-import-resolver-webpack": "^0.8.1",
     "eslint-loader": "1.6.0",
     "eslint-plugin-flowtype": "2.21.0",
@@ -37,6 +36,7 @@
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.2",
     "jest": "^18.1.0",
+    "jest-enzyme": "^2.1.2",
     "jest-webpack-alias": "^3.3.3",
     "json-loader": "0.5.4",
     "object-assign": "4.1.0",
@@ -59,7 +59,6 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
-    "jest-enzyme": "^2.1.2",
     "lodash": "^4.17.4",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
@@ -76,19 +75,6 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "storybook-to-ghpages"
-  },
-  "stylelint": {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "property-no-unknown": [
-        true,
-        {
-          "ignoreProperties": [
-            "composes"
-          ]
-        }
-      ]
-    }
   },
   "jest": {
     "collectCoverageFrom": [
@@ -117,13 +103,5 @@
   },
   "jest-webpack-alias": {
     "configFile": "config/webpack.config.dev.js"
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }
