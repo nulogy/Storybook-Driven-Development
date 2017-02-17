@@ -7,32 +7,32 @@ export default function ShadowsStory() {
   storiesOf('⭐️ Shadows', module)
     .add('shadow styles', () => (
       <div>
-        <Box demo={shadows} className="one--light" />
-        <Box demo={shadows} className="one--medium" />
-        <Box demo={shadows} className="one--heavy" />
+        <Box demo={shadows} className="one__light" />
+        <Box demo={shadows} className="one__medium" />
+        <Box demo={shadows} className="one__heavy" />
 
-        <Box demo={shadows} className="two--light" />
-        <Box demo={shadows} className="two--medium" />
-        <Box demo={shadows} className="two--heavy" />
+        <Box demo={shadows} className="two__light" />
+        <Box demo={shadows} className="two__medium" />
+        <Box demo={shadows} className="two__heavy" />
 
-        <Box demo={shadows} className="three--light" />
-        <Box demo={shadows} className="three--medium" />
-        <Box demo={shadows} className="three--heavy" />
+        <Box demo={shadows} className="three__light" />
+        <Box demo={shadows} className="three__medium" />
+        <Box demo={shadows} className="three__heavy" />
       </div>
     ))
     .add('inset shadow styles', () => (
       <div>
-        <Box demo={shadows} className="one--inset--light" />
-        <Box demo={shadows} className="one--inset--medium" />
-        <Box demo={shadows} className="one--inset--heavy" />
+        <Box demo={shadows} className="one--inset__light" />
+        <Box demo={shadows} className="one--inset__medium" />
+        <Box demo={shadows} className="one--inset__heavy" />
 
-        <Box demo={shadows} className="two--inset--light" />
-        <Box demo={shadows} className="two--inset--medium" />
-        <Box demo={shadows} className="two--inset--heavy" />
+        <Box demo={shadows} className="two--inset__light" />
+        <Box demo={shadows} className="two--inset__medium" />
+        <Box demo={shadows} className="two--inset__heavy" />
 
-        <Box demo={shadows} className="three--inset--light" />
-        <Box demo={shadows} className="three--inset--medium" />
-        <Box demo={shadows} className="three--inset--heavy" />
+        <Box demo={shadows} className="three--inset__light" />
+        <Box demo={shadows} className="three--inset__medium" />
+        <Box demo={shadows} className="three--inset__heavy" />
       </div>
     ));
 }

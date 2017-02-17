@@ -11,25 +11,25 @@ export default function BordersStory() {
         <Box demo={borders} className="medium" />
         <Box demo={borders} className="heavy" />
 
-        <Box demo={borders} className="light--sharp" />
-        <Box demo={borders} className="medium--sharp" />
-        <Box demo={borders} className="heavy--sharp" />
+        <Box demo={borders} className="light__sharp" />
+        <Box demo={borders} className="medium__sharp" />
+        <Box demo={borders} className="heavy__sharp" />
 
-        <Box demo={borders} className="light--top--sharp" />
-        <Box demo={borders} className="medium--top--sharp" />
-        <Box demo={borders} className="heavy--top--sharp" />
+        <Box demo={borders} className="light__top__sharp" />
+        <Box demo={borders} className="medium__top__sharp" />
+        <Box demo={borders} className="heavy__top__sharp" />
 
-        <Box demo={borders} className="light--bottom--sharp" />
-        <Box demo={borders} className="medium--bottom--sharp" />
-        <Box demo={borders} className="heavy--bottom--sharp" />
+        <Box demo={borders} className="light__bottom__sharp" />
+        <Box demo={borders} className="medium__bottom__sharp" />
+        <Box demo={borders} className="heavy__bottom__sharp" />
 
-        <Box demo={borders} className="light--left--sharp" />
-        <Box demo={borders} className="medium--left--sharp" />
-        <Box demo={borders} className="heavy--left--sharp" />
+        <Box demo={borders} className="light__left__sharp" />
+        <Box demo={borders} className="medium__left__sharp" />
+        <Box demo={borders} className="heavy__left__sharp" />
 
-        <Box demo={borders} className="light--right--sharp" />
-        <Box demo={borders} className="medium--right--sharp" />
-        <Box demo={borders} className="heavy--right--sharp" />
+        <Box demo={borders} className="light__right__sharp" />
+        <Box demo={borders} className="medium__right__sharp" />
+        <Box demo={borders} className="heavy__right__sharp" />
       </div>
     ));
 }

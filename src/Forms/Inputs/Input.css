@@ -17,12 +17,12 @@
 }
 
 .inputText {
-  composes: one--inset--light from "~/Atoms/Shadows.css";
+  composes: one--inset__light from "~/Atoms/Shadows.css";
 }
 
 .inputSelect {
   appearance: none;
-  composes: one--light from "~/Atoms/Shadows.css";
+  composes: one__light from "~/Atoms/Shadows.css";
   background-image: url("./Select/select-arrow.svg");
   background-position: 100% 50%;
   background-repeat: no-repeat;
