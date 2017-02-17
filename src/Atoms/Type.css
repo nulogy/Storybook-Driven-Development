@@ -1,42 +1,42 @@
-.fontSize--base   { font-size: 0.8rem; }
+.fontSize__base   { font-size: 0.8rem; }
 
-.fontSize--micro    { composes: fontSize--base; }
-.fontSize--tiny     { font-size: 1.2rem; }
-.fontSize--small    { font-size: 1.4rem; }
-.fontSize--normal   { font-size: 1.6rem; }
-.fontSize--large    { font-size: 1.8rem; }
-.fontSize--xlarge   { font-size: 2.4rem; }
-.fontSize--xxlarge  { font-size: 3.2rem; }
-.fontSize--huge     { font-size: 4rem; }
-.fontSize--giant    { font-size: 4.8rem; }
-.fontSize--titanic  { font-size: 6.4rem; }
+.fontSize__micro    { composes: fontSize__base; }
+.fontSize__tiny     { font-size: 1.2rem; }
+.fontSize__small    { font-size: 1.4rem; }
+.fontSize__normal   { font-size: 1.6rem; }
+.fontSize__large    { font-size: 1.8rem; }
+.fontSize__xlarge   { font-size: 2.4rem; }
+.fontSize__xxlarge  { font-size: 3.2rem; }
+.fontSize__huge     { font-size: 4rem; }
+.fontSize__giant    { font-size: 4.8rem; }
+.fontSize__titanic  { font-size: 6.4rem; }
 
-.lineHeight--micro  { line-height: 1rem; }
+.lineHeight__micro  { line-height: 1rem; }
 .lineHeight         { line-height: 2rem; }
-.lineHeight--large  { line-height: 1.25; }
+.lineHeight__large  { line-height: 1.25; }
 
-.lineBreak--small   { margin-bottom: 1rem; }
+.lineBreak__small   { margin-bottom: 1rem; }
 .lineBreak          { margin-bottom: 2rem; }
-.lineBreak--large   { margin-bottom: 3rem; }
-.lineBreak--xlarge  { margin-bottom: 4rem; }
+.lineBreak__large   { margin-bottom: 3rem; }
+.lineBreak__xlarge  { margin-bottom: 4rem; }
 
-.fontWeight--hairline { font-weight: 100; }
-.fontWeight--light    { font-weight: 300; }
+.fontWeight__hairline { font-weight: 100; }
+.fontWeight__light    { font-weight: 300; }
 .fontWeight           { font-weight: 400; }
-.fontWeight--normal   { composes: fontWeight; }
-.fontWeight--heavy    { font-weight: 500; }
-.fontWeight--bold     { font-weight: 600; }
+.fontWeight__normal   { composes: fontWeight; }
+.fontWeight__heavy    { font-weight: 500; }
+.fontWeight__bold     { font-weight: 600; }
 
-.micro    { composes: fontSize--micro lineHeight--micro; }
-.tiny     { composes: fontSize--tiny lineHeight; }
-.small    { composes: fontSize--small lineHeight; }
-.normal   { composes: fontSize--normal lineHeight; }
-.large    { composes: fontSize--large lineHeight; }
-.xlarge   { composes: fontSize--xlarge lineHeight--large; }
-.xxlarge  { composes: fontSize--xxlarge lineHeight--large; }
-.huge     { composes: fontSize--huge lineHeight--large; }
-.giant    { composes: fontSize--giant lineHeight--large; }
-.titanic  { composes: fontSize--titanic lineHeight--large; }
+.micro    { composes: fontSize__micro lineHeight__micro; }
+.tiny     { composes: fontSize__tiny lineHeight; }
+.small    { composes: fontSize__small lineHeight; }
+.normal   { composes: fontSize__normal lineHeight; }
+.large    { composes: fontSize__large lineHeight; }
+.xlarge   { composes: fontSize__xlarge lineHeight__large; }
+.xxlarge  { composes: fontSize__xxlarge lineHeight__large; }
+.huge     { composes: fontSize__huge lineHeight__large; }
+.giant    { composes: fontSize__giant lineHeight__large; }
+.titanic  { composes: fontSize__titanic lineHeight__large; }
 
 .h0,
 .h1,
@@ -51,11 +51,11 @@
 .normal,
 .small,
 .tiny {
-  composes: lineBreak fontWeight--bold;
+  composes: lineBreak fontWeight__bold;
 }
 
 .micro {
-  composes: lineBreak--small;
+  composes: lineBreak__small;
 }
 
 .h0 { composes: titanic; }

@@ -1,5 +1,5 @@
 .button {
-  composes: fontSize--normal fontWeight--heavy from "~/Atoms/Type.css";
+  composes: fontSize--normal fontWeight__heavy from "~/Atoms/Type.css";
   composes: medium from "~/Atoms/Borders.css";
   composes: one--light from "~/Atoms/Shadows.css";
   line-height: 3.4rem;

@@ -59,11 +59,11 @@ export default function MyComponentStory() {
     ))
     .add('weights', () => (
       <div>
-        <p className={type['fontWeight--hairline']}>fontWeight--hairline</p>
-        <p className={type['fontWeight--light']}>fontWeight--light</p>
-        <p className={type['fontWeight--normal']}>fontWeight / fontWeight--normal</p>
-        <p className={type['fontWeight--heavy']}>fontWeight--heavy</p>
-        <p className={type['fontWeight--bold']}>fontWeight--bold</p>
+        <p className={type['fontWeight__hairline']}>fontWeight__hairline</p>
+        <p className={type['fontWeight__light']}>fontWeight__light</p>
+        <p className={type['fontWeight__normal']}>fontWeight / fontWeight__normal</p>
+        <p className={type['fontWeight__heavy']}>fontWeight__heavy</p>
+        <p className={type['fontWeight__bold']}>fontWeight__bold</p>
       </div>
     ));
 }
