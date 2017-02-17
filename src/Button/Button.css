@@ -22,5 +22,5 @@
 
 .submit {
   composes: button;
-  composes: colour__button--submit from "~/Atoms/Colours.css";
+  composes: colour__button_submit from "~/Atoms/Colours.css";
 }
