@@ -9,7 +9,7 @@ export default function App() {
     <div>
       <div className={styles.header}>
         <img src={logo} className={styles.logo} alt="logo" />
-        <h1 className={styles.title}>Styleguide Driven Developement</h1>
+        <h1 className={styles.title}>Styleguide Driven Development</h1>
       </div>
       <div className={styles.content}>
         <IntervalFormController>
