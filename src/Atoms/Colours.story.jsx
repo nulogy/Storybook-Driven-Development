@@ -48,35 +48,35 @@ export default function ColoursStory() {
   storiesOf('⭐️ Colours', module)
     .add('text colours', () => (
       <div>
-        <Text className="colour__text_black" />
-        <Text className="colour__text_greyDark" />
-        <Text className="colour__text_grey" />
-        <Text className="colour__text_greyLight" />
-        <Text className="colour__text_white" inverse />
-        <Text className="colour__text_blue" />
-        <Text className="colour__text_blueLight" />
+        <Text className="colour__text__black" />
+        <Text className="colour__text__greyDark" />
+        <Text className="colour__text__grey" />
+        <Text className="colour__text__greyLight" />
+        <Text className="colour__text__white" inverse />
+        <Text className="colour__text__blue" />
+        <Text className="colour__text__blueLight" />
       </div>
     ))
     .add('backgrounds', () => (
       <div>
-        <Box className="colour__background_black" inverse />
-        <Box className="colour__background_greyDark" inverse />
-        <Box className="colour__background_grey" inverse />
-        <Box className="colour__background_greyLight" inverse />
-        <Box className="colour__background_white" />
-        <Box className="colour__background_blue" inverse />
-        <Box className="colour__background_blueLight" inverse />
+        <Box className="colour__background__black" inverse />
+        <Box className="colour__background__greyDark" inverse />
+        <Box className="colour__background__grey" inverse />
+        <Box className="colour__background__greyLight" inverse />
+        <Box className="colour__background__white" />
+        <Box className="colour__background__blue" inverse />
+        <Box className="colour__background__blueLight" inverse />
       </div>
     ))
     .add('borders', () => (
       <div>
-        <Box className="colour__border_black" border />
-        <Box className="colour__border_greyDark" border />
-        <Box className="colour__border_grey" border />
-        <Box className="colour__border_greyLight" border />
-        <Box className="colour__border_white" border />
-        <Box className="colour__border_blue" border />
-        <Box className="colour__border_blueLight" border />
+        <Box className="colour__border__black" border />
+        <Box className="colour__border__greyDark" border />
+        <Box className="colour__border__grey" border />
+        <Box className="colour__border__greyLight" border />
+        <Box className="colour__border__white" border />
+        <Box className="colour__border__blue" border />
+        <Box className="colour__border__blueLight" border />
       </div>
     ));
 }
