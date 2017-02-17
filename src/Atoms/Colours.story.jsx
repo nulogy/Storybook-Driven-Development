@@ -2,12 +2,18 @@ import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import colours from './Colours.css';
 
-const textStyle = isInverse => isInverse ? { backgroundColor: 'black' } : null;
+const textStyle = isInverse => (isInverse ? { backgroundColor: 'black' } : null);
 const Text = ({ className, inverse = false }) => (
   <p
     className={colours[className]}
     style={textStyle(inverse)}
-  >{className}</p>);
+  >{className}</p>
+);
+
+Text.propTypes = {
+  className: React.PropTypes.string.isRequired,
+  inverse: React.PropTypes.bool,
+};
 
 const boxStyle = (isInverse, border) => {
   let style = {
@@ -29,7 +35,14 @@ const boxStyle = (isInverse, border) => {
   return style;
 };
 const Box = ({ className, inverse = false, border = false }) => (
-  <div className={colours[className]} style={boxStyle(inverse, border)}>{className}</div>);
+  <div className={colours[className]} style={boxStyle(inverse, border)}>{className}</div>
+);
+
+Box.propTypes = {
+  className: React.PropTypes.string.isRequired,
+  inverse: React.PropTypes.bool,
+  border: React.PropTypes.bool,
+};
 
 export default function ColoursStory() {
   storiesOf('⭐️ Colours', module)

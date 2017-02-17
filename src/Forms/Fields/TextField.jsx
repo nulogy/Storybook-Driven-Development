@@ -1,6 +1,6 @@
-import React, { PropTypes } from "react";
-import Field from "./Field";
-import styles from "../Inputs/Input.css"
+import React, { PropTypes } from 'react';
+import Field from './Field';
+import styles from '../Inputs/Input.css';
 
 const TextField = ({
   disabled = false,
@@ -8,7 +8,7 @@ const TextField = ({
   name,
   placeholder,
   value,
-  onChange
+  onChange,
 }) => (
   <Field name={name} label={label}>
     <input
@@ -34,6 +34,6 @@ TextField.propTypes = {
     React.PropTypes.string,
     React.PropTypes.number,
   ]),
-}
+};
 
 export default TextField;

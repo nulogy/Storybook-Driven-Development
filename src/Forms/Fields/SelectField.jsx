@@ -1,9 +1,9 @@
-import React, { PropTypes } from "react";
-import Field from "./Field";
-import styles from "../Inputs/Input.css";
+import React, { PropTypes } from 'react';
+import Field from './Field';
+import styles from '../Inputs/Input.css';
 
-const mapOptions = options => ( options.map(
-  ({text, value}) => <option value={value} key={value}>{ text ? text : value }</option>
+const mapOptions = options => (options.map(
+  ({ text, value }) => <option value={value} key={value}>{ text || value }</option>,
 ));
 
 const SelectField = ({
@@ -37,12 +37,12 @@ SelectField.propTypes = {
     PropTypes.shape({
       value: PropTypes.string.isRequired,
       text: PropTypes.string,
-    })
+    }),
   ).isRequired,
   value: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
   ]),
-}
+};
 
 export default SelectField;

@@ -1,12 +1,13 @@
-import React, { PropTypes } from "react";
-import Button from "~/Button";
-import styles from "~/Forms/Form.css";
-import TextField from "~/Forms/Fields/TextField";
-import SelectField from "~/Forms/Fields/SelectField";
+/* eslint-disable camelcase */
+import React, { PropTypes } from 'react';
+import Button from '~/Button';
+import styles from '~/Forms/Form.css';
+import TextField from '~/Forms/Fields/TextField';
+import SelectField from '~/Forms/Fields/SelectField';
 
 const options = [
-  { value: "plv_available", text: "PLV available" },
-  { value: "po_due", text: "PO due" }
+  { value: 'plv_available', text: 'PLV available' },
+  { value: 'po_due', text: 'PO due' },
 ];
 
 const IntervalForm = ({
@@ -53,6 +54,6 @@ IntervalForm.propTypes = {
   start_milestone: PropTypes.string,
   end_milestone: PropTypes.string,
   handleChange: PropTypes.func,
-}
+};
 
 export default IntervalForm;

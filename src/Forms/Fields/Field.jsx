@@ -1,5 +1,5 @@
-import React, { PropTypes } from "react";
-import styles from "./Field.css";
+import React, { PropTypes } from 'react';
+import styles from './Field.css';
 
 const Field = ({
   children,
@@ -16,6 +16,6 @@ Field.propTypes = {
   children: React.PropTypes.node,
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
-}
+};
 
 export default Field;
