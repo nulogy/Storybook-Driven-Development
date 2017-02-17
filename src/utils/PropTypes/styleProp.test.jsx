@@ -38,16 +38,16 @@ describe("styleProp PropType", () => {
   it("errors when prop is not an object", () => {
     shallow(<Stub styles="not what I want" />);
 
-    expect(console.error).toBeCalledWith(
-      "Warning: Failed prop type: Invalid prop `styles` of type `string` supplied to `Stub`, expected `object`.\n    in Stub"
-    );
+    expect(console.error).toBeCalledWith(expect.stringMatching(
+      /Warning: Failed prop type: Invalid prop `styles` of type `string` supplied to `Stub`, expected `object`/
+    ));
   });
 
   it("errors when the value of a class is not a string", () => {
     shallow(<Stub styles={{ classOne: 33 }} />);
 
-    expect(console.error).toBeCalledWith(
-      "Warning: Failed prop type: Invalid prop `styles.classOne` of type `number` supplied to `Stub`, expected `string`.\n    in Stub"
-    );
+    expect(console.error).toBeCalledWith(expect.stringMatching(
+      /Warning: Failed prop type: Invalid prop `styles.classOne` of type `number` supplied to `Stub`, expected `string`/
+    ));
   });
 });
