@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react";
 import Button from "~/Button";
 import styles from "~/Forms/Form.css";
-import ToggleGroup from "~/Forms/Inputs/ToggleGroup";
+import ToggleField from "~/Forms/Fields/ToggleField";
 import TextField from "~/Forms/Fields/TextField";
 import SelectField from "~/Forms/Fields/SelectField";
 
@@ -32,7 +32,7 @@ const MeasurementForm = ({
       onChange={handleChange}
     />
 
-    <ToggleGroup
+    <ToggleField
       label="Select a measurement type"
       name="measurementType"
       value={measurementType}
