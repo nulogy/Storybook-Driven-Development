@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react";
 import Button from "~/Button";
 import styles from "~/Forms/Form.css";
-import RadioField from "~/Forms/Fields/RadioField";
+import ToggleGroup from "~/Forms/Inputs/ToggleGroup";
 import TextField from "~/Forms/Fields/TextField";
 import SelectField from "~/Forms/Fields/SelectField";
 
@@ -32,7 +32,7 @@ const MeasurementForm = ({
       onChange={handleChange}
     />
 
-    <RadioField
+    <ToggleGroup
       label="Select a measurement type"
       name="measurementType"
       value={measurementType}
@@ -83,6 +83,6 @@ MeasurementForm.propTypes = {
   end_milestone: PropTypes.string,
   measurementType: PropTypes.string,
   handleChange: PropTypes.func,
-}
+};
 
 export default MeasurementForm;
