@@ -7,8 +7,8 @@
     <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Milestone.icon">
             <g id="Milestone" transform="translate(5.000000, 5.000000)">
-                <ellipse id="Oval-Copy-5" stroke="#303030" cx="5" cy="5" rx="5" ry="5"></ellipse>
-                <ellipse id="Oval-Copy-7" fill="#303030" cx="5" cy="5" rx="3" ry="3"></ellipse>
+                <ellipse id="Oval-Copy-5" stroke="#000000" cx="5" cy="5" rx="5" ry="5"></ellipse>
+                <ellipse id="Oval-Copy-7" fill="#000000" cx="5" cy="5" rx="3" ry="3"></ellipse>
             </g>
         </g>
     </g>

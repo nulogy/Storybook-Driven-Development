@@ -1,20 +1,16 @@
 import React, { PropTypes } from "react";
 import * as Icons from "./icons/";
+import styles from "./Icon.css";
 
-export default function Icon({
-  name,
-  size = "1.25em",
- }) {
+export default function Icon({ name }) {
   const IconSvg = Icons[name];
   return (
-    <IconSvg
-      height={size}
-      width={size}
-    />
+    <i className={styles.icon}>
+      <IconSvg className={styles.svg} />
+    </i>
   );
 }
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
-  size: PropTypes.string,
 };
