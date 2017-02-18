@@ -52,7 +52,8 @@
   transition-duration: var(--transition-duration);
 }
 
-.colour__button:disabled {
+.colour__button:disabled,
+.colour__buttonDisabled {
   opacity: 0.5;
   background-color: var(--colour__greyLight);
   border-color: var(--colour__grey);

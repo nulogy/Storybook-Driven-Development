@@ -35,7 +35,10 @@ export default function ToggleGroupStory() {
   .add('all disabled with a value', () => (
     <ToggleGroup {...props} value="no_text_label" disabled />
   ))
-  .add('one disabled with a value', () => (
+  .add('one disabled, another with a value', () => (
     <ToggleGroup {...props} value="no_text_label" options={disabledOptions} />
+  ))
+  .add('one disabled with a value', () => (
+    <ToggleGroup {...props} value="value_b" options={disabledOptions} />
   ));
 }

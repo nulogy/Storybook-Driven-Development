@@ -1,3 +1,6 @@
+.group,
+.groupDisabled { /* empty class for theming hook */ }
+
 .label {
   composes: label from "../Label.css";
   font-size: 1.6rem;
@@ -5,11 +8,13 @@
   margin: 0 0 1rem;
   padding: 0;
 }
-.disabledLabel {
+.labelDisabled {
   composes: label;
   opacity: .5;
   pointer-events: none;
 }
+.labelActive { composes: label; }
+.labelActiveDisabled { composes: labelDisabled; }
 
 .radio {
   margin-right: 1.5em;

@@ -6,6 +6,13 @@ const isChecked = (value, chosenValue) => value === chosenValue;
 
 const isDisabled = (disabled, allDisabled) => (disabled === true || allDisabled === true);
 
+const labelClass = (isActive, isDisabled) => {
+  const classKey = ["label"];
+  if (isActive) classKey.push("Active");
+  if (isDisabled) classKey.push("Disabled");
+  return classKey.join("");
+};
+
 const mapOptions = (
   name,
   options,
@@ -15,7 +22,7 @@ const mapOptions = (
   onChange
 ) => ( options.map(
   ({text, value, disabled = false}) => (
-    <label className={styles[isDisabled(disabled, allDisabled) ? "disabledLabel" : "label"]} key={value}>
+    <label className={styles[labelClass(isChecked(value, chosenValue), isDisabled(disabled, allDisabled))]} key={value}>
       <input
         className={styles.radio}
         type="radio"
@@ -37,11 +44,12 @@ const RadioGroup = ({
   options,
   theme,
   value,
-}) => (
-  <div>
-    { mapOptions(name, options, value, Object.assign({}, baseStyles, theme), disabled, onChange) }
-  </div>
-);
+}) => {
+  const styles = Object.assign({}, baseStyles, theme);
+  return (<div className={styles[disabled ? "groupDisabled" : "group"]}>
+    { mapOptions(name, options, value, styles, disabled, onChange) }
+  </div>);
+};
 
 RadioGroup.propTypes = {
   disabled: PropTypes.bool,
