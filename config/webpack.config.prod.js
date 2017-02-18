@@ -157,11 +157,16 @@ module.exports = {
       },
       // "file" loader for svg
       {
-        test: /\.svg$/,
+        test: /^(?!.*\.icon\.svg$).*\.svg$/,
         loader: 'file',
         query: {
           name: 'static/media/[name].[hash:8].[ext]',
         },
+      },
+      // load svgs with the extension `.icon.svg` as React components that render inline svgs
+      {
+        test: /\.icon.svg$/,
+        loader: 'babel!svg-react',
       },
     ],
   },

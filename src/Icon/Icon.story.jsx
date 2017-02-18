@@ -5,6 +5,9 @@ import Icon from './Icon';
 export default function IconStory() {
   storiesOf('❤️ Icon', module)
     .add('default', () => (
-      <Icon name="milestone" />
+      <div>
+        <Icon name="Milestone" />
+        <Icon name="Interval" />
+      </div>
     ));
 }
