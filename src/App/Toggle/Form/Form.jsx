@@ -12,8 +12,8 @@ const options = [
 ];
 
 const measurementTypes = [
-  { value: "milestone", text: <span><Icon name="Milestone" /> A single point milestone</span> },
-  { value: "interval", text: <span><Icon name="Interval" /> An interval between two points</span> },
+  { value: "milestone", text: <span><Icon name="Milestone" /> Single Point Interval</span> },
+  { value: "interval", text: <span><Icon name="Interval" /> 2 Point Interval</span> },
 ];
 
 const MeasurementForm = ({
@@ -24,12 +24,12 @@ const MeasurementForm = ({
   measurementType,
 }) => (
   <form>
-    <h2 className={styles.title}>Create a new measurement</h2>
+    <h2 className={styles.title}>Create a new interval</h2>
 
     <TextField
       name="interval_name"
       value={interval_name}
-      label="Name your measuremnt"
+      label="Name your interval"
       onChange={handleChange}
     />
 
