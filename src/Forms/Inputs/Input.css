@@ -1,5 +1,5 @@
 .input {
-  composes: fontSize--normal from "~/Atoms/Type.css";
+  composes: fontSize__normal from "~/Atoms/Type.css";
   composes: light from "~/Atoms/Borders.css";
   composes: colour__input from "~/Atoms/Colours.css";
   line-height: 3.8rem;
