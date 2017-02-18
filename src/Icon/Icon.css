@@ -17,3 +17,10 @@
   top: 0;
   position: absolute;
 }
+
+.icon .svg *[fill="#000000"] {
+  fill: currentColor;
+}
+.icon .svg *[stroke="#000000"] {
+  stroke: currentColor;
+}
