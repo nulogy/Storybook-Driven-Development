@@ -16,6 +16,7 @@ export default function RadioFieldStory() {
 
   const props = {
     name: 'name',
+    label: 'a label',
     options,
     onChange: action('onChange'),
   };
