@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './nulogy_logo.svg';
 import styles from './App.css';
-import IntervalFormController from './Intervals/Form/FormController';
-import IntervalForm from './Intervals/Form';
+import FormController from './Toggle/Form/FormController';
+import Form from './Toggle/Form';
 
 export default function App() {
   return (
@@ -12,9 +12,9 @@ export default function App() {
         <h1 className={styles.title}>Styleguide Driven Development</h1>
       </div>
       <div className={styles.content}>
-        <IntervalFormController>
-          <IntervalForm />
-        </IntervalFormController>
+        <FormController>
+          <Form />
+        </FormController>
       </div>
     </div>
   );
