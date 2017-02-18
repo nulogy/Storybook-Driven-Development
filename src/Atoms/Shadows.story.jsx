@@ -22,17 +22,17 @@ export default function ShadowsStory() {
     ))
     .add('inset shadow styles', () => (
       <div>
-        <Box demo={shadows} className="one--inset__light" />
-        <Box demo={shadows} className="one--inset__medium" />
-        <Box demo={shadows} className="one--inset__heavy" />
+        <Box demo={shadows} className="one__inset__light" />
+        <Box demo={shadows} className="one__inset__medium" />
+        <Box demo={shadows} className="one__inset__heavy" />
 
-        <Box demo={shadows} className="two--inset__light" />
-        <Box demo={shadows} className="two--inset__medium" />
-        <Box demo={shadows} className="two--inset__heavy" />
+        <Box demo={shadows} className="two__inset__light" />
+        <Box demo={shadows} className="two__inset__medium" />
+        <Box demo={shadows} className="two__inset__heavy" />
 
-        <Box demo={shadows} className="three--inset__light" />
-        <Box demo={shadows} className="three--inset__medium" />
-        <Box demo={shadows} className="three--inset__heavy" />
+        <Box demo={shadows} className="three__inset__light" />
+        <Box demo={shadows} className="three__inset__medium" />
+        <Box demo={shadows} className="three__inset__heavy" />
       </div>
     ));
 }

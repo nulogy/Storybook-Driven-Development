@@ -17,7 +17,7 @@
 }
 
 .inputText {
-  composes: one--inset__light from "~/Atoms/Shadows.css";
+  composes: one__inset__light from "~/Atoms/Shadows.css";
 }
 
 .inputSelect {
