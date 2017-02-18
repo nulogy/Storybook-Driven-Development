@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react";
 import Button from "~/Button";
+import Icon from "~/Icon";
 import styles from "~/Forms/Form.css";
 import ToggleField from "~/Forms/Fields/ToggleField";
 import TextField from "~/Forms/Fields/TextField";
@@ -11,8 +12,8 @@ const options = [
 ];
 
 const measurementTypes = [
-  { value: "milestone", text: "A single point milestone" },
-  { value: "interval", text: "An interval between two points" },
+  { value: "milestone", text: <span><Icon name="Milestone" /> A single point milestone</span> },
+  { value: "interval", text: <span><Icon name="Interval" /> An interval between two points</span> },
 ];
 
 const MeasurementForm = ({
