@@ -1,9 +1,9 @@
 import React, { PropTypes } from "react";
 import Button from "~/Atoms/Button";
 import styles from "~/Atoms/Form.css";
-import RadioField from "~/Forms/Fields/RadioField";
-import TextField from "~/Forms/Fields/TextField";
-import SelectField from "~/Forms/Fields/SelectField";
+import RadioField from "~/Molecules/Fields/RadioField";
+import TextField from "~/Molecules/Fields/TextField";
+import SelectField from "~/Molecules/Fields/SelectField";
 
 const options = [
   { value: "plv_available", text: "PLV available" },
