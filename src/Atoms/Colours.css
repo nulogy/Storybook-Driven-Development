@@ -33,6 +33,11 @@
 .colour__border__blue       { border-color: var(--colour__blue); }
 .colour__border__blueLight { border-color: var(--colour__blueLight); }
 
+.outline__blue,
+.outline__blue__hover:hover {
+  box-shadow: 0 0 0 0.2rem var(--colour__blue);
+}
+
 .colour__link__underline {
   composes: colour__text__black;
   box-shadow: inset 0 -0.5em var(--colour__blueLight);

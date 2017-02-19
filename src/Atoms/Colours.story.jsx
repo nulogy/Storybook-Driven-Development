@@ -78,5 +78,11 @@ export default function ColoursStory() {
         <Box className="colour__border__blue" border />
         <Box className="colour__border__blueLight" border />
       </div>
+    ))
+    .add('outlines', () => (
+      <div>
+        <Box className="outline__blue" border />
+        <Box className="outline__blue__hover" border />
+      </div>
     ));
 }

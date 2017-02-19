@@ -5,6 +5,40 @@
 .borderStyle  { border-style: solid; }
 
 .borderRadius { border-radius: 0.3rem; }
+.borderRadius__top {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+.borderRadius__right {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.borderRadius__bottom {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.borderRadius__left {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.borderRadius__firstChild:first-child {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.borderRadius__lastChild:last-child {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.borderRadius__topChild:first-child {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+.borderRadius__bottomChild:last-child {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
 .borderRadius__sharp { border-radius: 0; }
 
 .light { composes: borderWidth__light borderStyle borderRadius; }
