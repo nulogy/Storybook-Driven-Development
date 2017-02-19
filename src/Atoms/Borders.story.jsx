@@ -3,6 +3,10 @@ import { storiesOf } from '@kadira/storybook';
 import borders from './Borders.css';
 import Box from '../Box';
 
+const borderStyles = { border: ".1rem solid black" };
+
+const nthChildContainerStyles = {border: "1rem solid whitesmoke"};
+
 export default function BordersStory() {
   storiesOf('⭐️ Borders', module)
     .add('border styles', () => (
@@ -34,33 +38,33 @@ export default function BordersStory() {
     ))
     .add('border radii', () => (
       <div>
-        <Box demo={borders} className="borderRadius__top" style={{ border: ".1rem solid black" }}/>
-        <Box demo={borders} className="borderRadius__right" style={{ border: ".1rem solid black" }}/>
-        <Box demo={borders} className="borderRadius__bottom" style={{ border: ".1rem solid black" }}/>
-        <Box demo={borders} className="borderRadius__left" style={{ border: ".1rem solid black" }}/>
+        <Box demo={borders} className="borderRadius__top" style={borderStyles}/>
+        <Box demo={borders} className="borderRadius__right" style={borderStyles}/>
+        <Box demo={borders} className="borderRadius__bottom" style={borderStyles}/>
+        <Box demo={borders} className="borderRadius__left" style={borderStyles}/>
       </div>
     ))
     .add('border radius nth-child', () => (
       <div>
-        <p style={{border: "1rem solid whitesmoke"}}>
-          <Box demo={borders} className="borderRadius__firstChild" style={{ border: ".1rem solid black" }}/>
-          <Box demo={borders} className="borderRadius__firstChild" style={{ border: ".1rem solid black" }}/>
-          <Box demo={borders} className="borderRadius__firstChild" style={{ border: ".1rem solid black" }}/>
+        <p style={nthChildContainerStyles}>
+          <Box demo={borders} className="borderRadius__firstChild" style={borderStyles}/>
+          <Box demo={borders} className="borderRadius__firstChild" style={borderStyles}/>
+          <Box demo={borders} className="borderRadius__firstChild" style={borderStyles}/>
         </p>
-        <p style={{border: "1rem solid whitesmoke"}}>
-          <Box demo={borders} className="borderRadius__lastChild" style={{ border: ".1rem solid black" }}/>
-          <Box demo={borders} className="borderRadius__lastChild" style={{ border: ".1rem solid black" }}/>
-          <Box demo={borders} className="borderRadius__lastChild" style={{ border: ".1rem solid black" }}/>
+        <p style={nthChildContainerStyles}>
+          <Box demo={borders} className="borderRadius__lastChild" style={borderStyles}/>
+          <Box demo={borders} className="borderRadius__lastChild" style={borderStyles}/>
+          <Box demo={borders} className="borderRadius__lastChild" style={borderStyles}/>
         </p>
-        <p style={{border: "1rem solid whitesmoke"}}>
-          <Box demo={borders} className="borderRadius__topChild" style={{ border: ".1rem solid black" }}/>
-          <Box demo={borders} className="borderRadius__topChild" style={{ border: ".1rem solid black" }}/>
-          <Box demo={borders} className="borderRadius__topChild" style={{ border: ".1rem solid black" }}/>
+        <p style={nthChildContainerStyles}>
+          <Box demo={borders} className="borderRadius__topChild" style={borderStyles}/>
+          <Box demo={borders} className="borderRadius__topChild" style={borderStyles}/>
+          <Box demo={borders} className="borderRadius__topChild" style={borderStyles}/>
         </p>
-        <p style={{border: "1rem solid whitesmoke"}}>
-          <Box demo={borders} className="borderRadius__bottomChild" style={{ border: ".1rem solid black" }}/>
-          <Box demo={borders} className="borderRadius__bottomChild" style={{ border: ".1rem solid black" }}/>
-          <Box demo={borders} className="borderRadius__bottomChild" style={{ border: ".1rem solid black" }}/>
+        <p style={nthChildContainerStyles}>
+          <Box demo={borders} className="borderRadius__bottomChild" style={borderStyles}/>
+          <Box demo={borders} className="borderRadius__bottomChild" style={borderStyles}/>
+          <Box demo={borders} className="borderRadius__bottomChild" style={borderStyles}/>
         </p>
       </div>
     ));
