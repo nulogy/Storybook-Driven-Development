@@ -1,4 +1,5 @@
 .story {
+  position: relative;
   width: calc(100% -  20px);
   padding: 20px 10px 21px;
   margin: 10px;

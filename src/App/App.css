@@ -1,26 +1,6 @@
-.header {
-  background-color: #222;
-  padding: 1rem;
-  color: white;
-  white-space: nowrap;
-  text-align: center;
+.app {
+  padding: 0 6rem;
 }
-
-.logo,
-.title {
-  vertical-align: middle;
-}
-
-.logo {
-  height: 4rem;
-  padding: 0 1rem;
-}
-
-.title {
-  composes: h3 from "~/Atoms/Type.css";
-  display: inline-block;
-}
-
 .content {
   width: 39rem;
   margin: 0 auto;

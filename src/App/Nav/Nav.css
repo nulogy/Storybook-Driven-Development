@@ -14,7 +14,7 @@
 }
 
 .item {
-  composes: colour__text__white from "~/Atoms/Colours.css";
+  composes: colour__text__grey from "~/Atoms/Colours.css";
   composes: xxlarge from "~/Atoms/Type.css";
   display: block;
   margin-bottom: 3rem;
