@@ -10,7 +10,7 @@
 
 .label {
   composes: colour__button outline__blue__hover from "~/Quarks/Colours.css";
-  composes: borderRadius__sm__firstChild borderRadius__sm__lastChild from "~/Quarks/Borders.css";
+  composes: radius__sm__firstChild radius__sm__lastChild from "~/Quarks/Borders.css";
   text-align: center;
   flex: 1;
 }

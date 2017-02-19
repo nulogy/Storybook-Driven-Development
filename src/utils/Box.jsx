@@ -22,7 +22,7 @@ export default function Box({
   if (borders === true) {
     Object.assign(baseStyles, {
       borderStyle: 'solid',
-      borderWidth: '.4rem',
+      borderWidth: '0.4rem',
     });
   }
 
