@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Home.icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Home.icon" stroke="#000000" stroke-width="2">
+            <g id="Home-Icon" transform="translate(12.000000, 10.000000)">
+                <path d="M5,19.0909091 L0.398181818,19.0909091 C0.178181818,19.0909091 0,18.9618182 0,18.7540909 L0,7.27272727" id="Stroke-459"></path>
+                <path d="M16.3636364,7.72727273 L16.3636364,18.7540909 C16.3636364,18.9618182 16.1854545,19.0909091 15.9654545,19.0909091 L10.9090909,19.0909091" id="Stroke-460"></path>
+                <polyline id="Stroke-461" stroke-linecap="round" points="16.3636364 7.67577273 8.18181818 0.000318181818 0 7.46804545"></polyline>
+                <polyline id="Stroke-462" points="5.45454545 20 5.45454545 13.1818182 10.9090909 13.1818182 10.9090909 20"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
