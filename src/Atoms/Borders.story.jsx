@@ -3,7 +3,10 @@ import { storiesOf } from '@kadira/storybook';
 import Box from '~/utils/Box';
 import borders from './Borders.css';
 
-const containerStyles = { border: '1rem solid whitesmoke' };
+const containerStyles = {
+  border: '1rem solid whitesmoke',
+  marginBottom: "2rem",
+};
 
 export default function BordersStory() {
   storiesOf('⭐️ Borders', module)
@@ -44,26 +47,26 @@ export default function BordersStory() {
     ))
     .add('border radius nth-child', () => (
       <div>
-        <p style={containerStyles}>
+        <div style={containerStyles}>
           <Box demo={borders} className="borderRadius__firstChild" borders />
           <Box demo={borders} className="borderRadius__firstChild" borders />
           <Box demo={borders} className="borderRadius__firstChild" borders />
-        </p>
-        <p style={containerStyles}>
+        </div>
+        <div style={containerStyles}>
           <Box demo={borders} className="borderRadius__lastChild" borders />
           <Box demo={borders} className="borderRadius__lastChild" borders />
           <Box demo={borders} className="borderRadius__lastChild" borders />
-        </p>
-        <p style={containerStyles}>
+        </div>
+        <div style={containerStyles}>
           <Box demo={borders} className="borderRadius__topChild" borders />
           <Box demo={borders} className="borderRadius__topChild" borders />
           <Box demo={borders} className="borderRadius__topChild" borders />
-        </p>
-        <p style={containerStyles}>
+        </div>
+        <div style={containerStyles}>
           <Box demo={borders} className="borderRadius__bottomChild" borders />
           <Box demo={borders} className="borderRadius__bottomChild" borders />
           <Box demo={borders} className="borderRadius__bottomChild" borders />
-        </p>
+        </div>
       </div>
     ));
 }

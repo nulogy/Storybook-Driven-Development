@@ -9,7 +9,7 @@ addDecorator((story) => (
 ));
 
 const req = require.context(
-  "../src",       // path where stories live
+  "../../src",       // path where stories live
   true,           // recursive?
   /\.story.jsx$/, // story files match this pattern
 );
