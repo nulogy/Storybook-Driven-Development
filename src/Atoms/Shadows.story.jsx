@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import shadows from './Shadows.css';
 import Box from '~/utils/Box';
+import shadows from './Shadows.css';
 
 export default function ShadowsStory() {
   storiesOf('⭐️ Shadows', module)

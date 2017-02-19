@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Box from "~/utils/Box";
+import Box from '~/utils/Box';
 import colours from './Colours.css';
 
 const textStyle = isInverse => (isInverse ? { backgroundColor: 'black' } : null);
