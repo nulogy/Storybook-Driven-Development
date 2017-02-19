@@ -9,7 +9,7 @@ const containerStyles = {
 };
 
 export default function BordersStory() {
-  storiesOf('⭐️ Borders', module)
+  storiesOf('✨ Borders', module)
     .add('border styles', () => (
       <div>
         <Box demo={borders} className="light" />

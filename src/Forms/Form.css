@@ -1,6 +1,6 @@
 .title {
-  composes: xlarge from "~/Atoms/Type.css";
-  composes: light__bottom__sharp from "~/Atoms/Borders.css";
+  composes: xlarge from "~/Quarks/Type.css";
+  composes: light__bottom__sharp from "~/Quarks/Borders.css";
   padding-bottom: 0.4rem;
   margin-bottom: 2.5rem;
 }

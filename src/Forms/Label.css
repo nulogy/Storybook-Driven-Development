@@ -1,5 +1,5 @@
 .label {
-  composes: small from "~/Atoms/Type.css";
+  composes: small from "~/Quarks/Type.css";
   display: block;
   margin: 0 0 1rem;
   padding-top: 1rem;

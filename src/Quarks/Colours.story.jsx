@@ -17,7 +17,7 @@ Text.propTypes = {
 };
 
 export default function ColoursStory() {
-  storiesOf('⭐️ Colours', module)
+  storiesOf('✨ Colours', module)
     .add('text colours', () => (
       <div>
         <Text className="colour__text__black" />

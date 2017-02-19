@@ -1,30 +1,30 @@
 .nav {
-  composes: colour__background__black colour__text__white from "~/Atoms/Colours.css";
+  composes: colour__background__black colour__text__white from "~/Quarks/Colours.css";
   text-align: center;
   height: 100vh;
   width: 6rem;
 }
 
 .list {
-  composes: reset from "~/Atoms/Lists.css";
+  composes: reset from "~/Quarks/Lists.css";
   margin-top: 0;
 }
 
 .item {
-  composes: colour__text__grey from "~/Atoms/Colours.css";
-  composes: xxlarge from "~/Atoms/Type.css";
+  composes: colour__text__grey from "~/Quarks/Colours.css";
+  composes: xxlarge from "~/Quarks/Type.css";
   display: block;
   margin-bottom: 3rem;
 }
 
 .itemActive {
   composes: item;
-  composes: colour__text__blueLight from "~/Atoms/Colours.css";
+  composes: colour__text__blueLight from "~/Quarks/Colours.css";
 }
 
 .itemHeader {
   composes: item;
-  composes: colour__background__blue from "~/Atoms/Colours.css";
+  composes: colour__background__blue from "~/Quarks/Colours.css";
   height: 6rem;
   padding-top: 1rem;
 }
@@ -35,5 +35,5 @@
 }
 
 .text {
-  composes: hide from "~/Atoms/Type.css";
+  composes: hide from "~/Quarks/Type.css";
 }

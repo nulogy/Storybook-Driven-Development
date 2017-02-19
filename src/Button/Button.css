@@ -1,7 +1,7 @@
 .button {
-  composes: fontSize__normal fontWeight__heavy from "~/Atoms/Type.css";
-  composes: medium from "~/Atoms/Borders.css";
-  composes: one__light from "~/Atoms/Shadows.css";
+  composes: fontSize__normal fontWeight__heavy from "~/Quarks/Type.css";
+  composes: medium from "~/Quarks/Borders.css";
+  composes: one__light from "~/Quarks/Shadows.css";
   line-height: 3.4rem;
   height: 4rem;
   padding: 0 1.5rem;
@@ -17,10 +17,10 @@
 
 .normal {
   composes: button;
-  composes: colour__button from "~/Atoms/Colours.css";
+  composes: colour__button from "~/Quarks/Colours.css";
 }
 
 .submit {
   composes: button;
-  composes: colour__button_submit from "~/Atoms/Colours.css";
+  composes: colour__button_submit from "~/Quarks/Colours.css";
 }

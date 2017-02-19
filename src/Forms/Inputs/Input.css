@@ -1,7 +1,7 @@
 .input {
-  composes: fontSize__normal from "~/Atoms/Type.css";
-  composes: light from "~/Atoms/Borders.css";
-  composes: colour__input from "~/Atoms/Colours.css";
+  composes: fontSize__normal from "~/Quarks/Type.css";
+  composes: light from "~/Quarks/Borders.css";
+  composes: colour__input from "~/Quarks/Colours.css";
   line-height: 3.8rem;
   height: 4rem;
   padding: 0 1.5rem;
@@ -17,12 +17,12 @@
 }
 
 .inputText {
-  composes: one__inset__light from "~/Atoms/Shadows.css";
+  composes: one__inset__light from "~/Quarks/Shadows.css";
 }
 
 .inputSelect {
   appearance: none;
-  composes: one__light from "~/Atoms/Shadows.css";
+  composes: one__light from "~/Quarks/Shadows.css";
   background-image: url("./Select/select-arrow.svg");
   background-position: 100% 50%;
   background-repeat: no-repeat;

@@ -4,7 +4,7 @@ import Box from '~/utils/Box';
 import shadows from './Shadows.css';
 
 export default function ShadowsStory() {
-  storiesOf('⭐️ Shadows', module)
+  storiesOf('✨ Shadows', module)
     .add('shadow styles', () => (
       <div>
         <Box demo={shadows} className="one__light" />

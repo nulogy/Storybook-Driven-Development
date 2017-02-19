@@ -12,7 +12,7 @@ const UList = ({ className = '' }) => (
 UList.propTypes = { className: PropTypes.string };
 
 export default function ListsStory() {
-  storiesOf('⭐️ Lists', module)
+  storiesOf('✨ Lists', module)
     .add('default', () => (
       <UList />
     ))
