@@ -1,6 +1,13 @@
 .app {
   padding: 0 6rem;
 }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .content {
   width: 39rem;
   margin: 0 auto;

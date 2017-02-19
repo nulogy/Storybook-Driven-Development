@@ -7,7 +7,7 @@ import Form from './Toggle/Form';
 export default function App() {
   return (
     <div className={styles.app}>
-      <Nav value="/edit" />
+      <Nav className={styles.nav} value="/edit" />
       <main className={styles.content} role="main">
         <FormController>
           <Form />

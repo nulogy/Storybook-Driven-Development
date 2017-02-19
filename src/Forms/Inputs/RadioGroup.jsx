@@ -58,7 +58,7 @@ RadioGroup.propTypes = {
   options: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string.isRequired,
-      text: PropTypes.string,
+      text: PropTypes.node,
     })
   ).isRequired,
   theme: styleProp(baseStyles),

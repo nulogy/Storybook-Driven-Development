@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react";
+import classNames from "classnames";
 import Icon from "~/Icon";
 import styles from "./Nav.css";
 import logo from '~/App/nulogy_logo.svg';
@@ -13,8 +14,8 @@ const sections = [
 
 const isActive = (value, chosenValue) => value === chosenValue;
 
-const Nav = ({ onChange, options = sections, value }) => (
-  <nav className={styles.nav} role="navigation">
+const Nav = ({ className, options = sections, value }) => (
+  <nav className={classNames(className, styles.nav)} role="navigation">
     <ul className={styles.list}>
       <li>
         <a className={styles.itemHeader}>
@@ -35,11 +36,11 @@ const Nav = ({ onChange, options = sections, value }) => (
 );
 
 Nav.propTypes = {
-  onChange: PropTypes.func,
+  className: PropTypes.string,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string.isRequired,
-      text: PropTypes.string,
+      text: PropTypes.node,
     })
   ),
   value: PropTypes.string,
