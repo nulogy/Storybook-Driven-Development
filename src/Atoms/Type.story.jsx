@@ -65,5 +65,8 @@ export default function MyComponentStory() {
         <p className={type.fontWeight__heavy}>fontWeight__heavy</p>
         <p className={type.fontWeight__bold}>fontWeight__bold</p>
       </div>
+    ))
+    .add('utils', () => (
+      <p><b>hide:</b> Nothing to see here 👉 <span className={type.hide}>Boo 👻</span> 👈</p>
     ));
 }
