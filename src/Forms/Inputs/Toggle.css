@@ -10,7 +10,7 @@
 
 .label {
   composes: colour__button outline__blue__hover from "~/Atoms/Colours.css";
-  composes: borderRadius__firstChild borderRadius__lastChild from "~/Atoms/Borders.css";
+  composes: borderRadius__sm__firstChild borderRadius__sm__lastChild from "~/Atoms/Borders.css";
   text-align: center;
   flex: 1;
 }
