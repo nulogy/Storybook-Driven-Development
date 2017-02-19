@@ -1,47 +1,19 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
+import Box from "~/utils/Box";
 import colours from './Colours.css';
 
 const textStyle = isInverse => (isInverse ? { backgroundColor: 'black' } : null);
+
 const Text = ({ className, inverse = false }) => (
   <p
     className={colours[className]}
     style={textStyle(inverse)}
   >{className}</p>
 );
-
 Text.propTypes = {
   className: React.PropTypes.string.isRequired,
   inverse: React.PropTypes.bool,
-};
-
-const boxStyle = (isInverse, border) => {
-  let style = {
-    textAlign: 'center',
-    color: 'black',
-    padding: '2rem',
-    height: '6rem',
-    marginBottom: '2rem',
-  };
-  if (isInverse === true) {
-    style = Object.assign(style, { color: 'white' });
-  }
-  if (border === true) {
-    style = Object.assign(style, {
-      borderStyle: 'solid',
-      borderWidth: '.4rem',
-    });
-  }
-  return style;
-};
-const Box = ({ className, inverse = false, border = false }) => (
-  <div className={colours[className]} style={boxStyle(inverse, border)}>{className}</div>
-);
-
-Box.propTypes = {
-  className: React.PropTypes.string.isRequired,
-  inverse: React.PropTypes.bool,
-  border: React.PropTypes.bool,
 };
 
 export default function ColoursStory() {
@@ -59,30 +31,30 @@ export default function ColoursStory() {
     ))
     .add('backgrounds', () => (
       <div>
-        <Box className="colour__background__black" inverse />
-        <Box className="colour__background__greyDark" inverse />
-        <Box className="colour__background__grey" inverse />
-        <Box className="colour__background__greyLight" inverse />
-        <Box className="colour__background__white" />
-        <Box className="colour__background__blue" inverse />
-        <Box className="colour__background__blueLight" inverse />
+        <Box demo={colours} className="colour__background__black" inverse />
+        <Box demo={colours} className="colour__background__greyDark" inverse />
+        <Box demo={colours} className="colour__background__grey" inverse />
+        <Box demo={colours} className="colour__background__greyLight" inverse />
+        <Box demo={colours} className="colour__background__white" />
+        <Box demo={colours} className="colour__background__blue" inverse />
+        <Box demo={colours} className="colour__background__blueLight" inverse />
       </div>
     ))
     .add('borders', () => (
       <div>
-        <Box className="colour__border__black" border />
-        <Box className="colour__border__greyDark" border />
-        <Box className="colour__border__grey" border />
-        <Box className="colour__border__greyLight" border />
-        <Box className="colour__border__white" border />
-        <Box className="colour__border__blue" border />
-        <Box className="colour__border__blueLight" border />
+        <Box demo={colours} className="colour__border__black" borders />
+        <Box demo={colours} className="colour__border__greyDark" borders />
+        <Box demo={colours} className="colour__border__grey" borders />
+        <Box demo={colours} className="colour__border__greyLight" borders />
+        <Box demo={colours} className="colour__border__white" borders />
+        <Box demo={colours} className="colour__border__blue" borders />
+        <Box demo={colours} className="colour__border__blueLight" borders />
       </div>
     ))
     .add('outlines', () => (
       <div>
-        <Box className="outline__blue" border />
-        <Box className="outline__blue__hover" border />
+        <Box demo={colours} className="outline__blue" borders />
+        <Box demo={colours} className="outline__blue__hover" borders />
       </div>
     ));
 }
