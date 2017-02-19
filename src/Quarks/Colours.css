@@ -6,113 +6,113 @@
   --colour__white: #fff;
   --colour__blue: #0096ff;
   --colour__blueLight: #80cbff;
-  --transition-duration: 0.15;
+  --transitionDuration: 0.15s;
 }
 
-.colour__text__black      { color: var(--colour__black); }
-.colour__text__greyDark  { color: var(--colour__greyDark); }
-.colour__text__grey       { color: var(--colour__grey); }
-.colour__text__greyLight { color: var(--colour__greyLight); }
-.colour__text__white      { color: var(--colour__white); }
-.colour__text__blue       { color: var(--colour__blue); }
-.colour__text__blueLight { color: var(--colour__blueLight); }
+.text__black      { color: var(--colour__black); }
+.text__greyDark  { color: var(--colour__greyDark); }
+.text__grey       { color: var(--colour__grey); }
+.text__greyLight { color: var(--colour__greyLight); }
+.text__white      { color: var(--colour__white); }
+.text__blue       { color: var(--colour__blue); }
+.text__blueLight { color: var(--colour__blueLight); }
 
-.colour__background__black      { background-color: var(--colour__black); }
-.colour__background__greyDark  { background-color: var(--colour__greyDark); }
-.colour__background__grey       { background-color: var(--colour__grey); }
-.colour__background__greyLight { background-color: var(--colour__greyLight); }
-.colour__background__white      { background-color: var(--colour__white); }
-.colour__background__blue       { background-color: var(--colour__blue); }
-.colour__background__blueLight { background-color: var(--colour__blueLight); }
+.background__black      { background-color: var(--colour__black); }
+.background__greyDark  { background-color: var(--colour__greyDark); }
+.background__grey       { background-color: var(--colour__grey); }
+.background__greyLight { background-color: var(--colour__greyLight); }
+.background__white      { background-color: var(--colour__white); }
+.background__blue       { background-color: var(--colour__blue); }
+.background__blueLight { background-color: var(--colour__blueLight); }
 
-.colour__border__black      { border-color: var(--colour__black); }
-.colour__border__greyDark  { border-color: var(--colour__greyDark); }
-.colour__border__grey       { border-color: var(--colour__grey); }
-.colour__border__greyLight { border-color: var(--colour__greyLight); }
-.colour__border__white      { border-color: var(--colour__white); }
-.colour__border__blue       { border-color: var(--colour__blue); }
-.colour__border__blueLight { border-color: var(--colour__blueLight); }
+.border__black      { border-color: var(--colour__black); }
+.border__greyDark  { border-color: var(--colour__greyDark); }
+.border__grey       { border-color: var(--colour__grey); }
+.border__greyLight { border-color: var(--colour__greyLight); }
+.border__white      { border-color: var(--colour__white); }
+.border__blue       { border-color: var(--colour__blue); }
+.border__blueLight { border-color: var(--colour__blueLight); }
 
 .outline__blue,
 .outline__blue__hover:hover {
   box-shadow: 0 0 0 0.2rem var(--colour__blue);
 }
 
-.colour__link__underline {
-  composes: colour__text__black;
+.link__underline {
+  composes: text__black;
   box-shadow: inset 0 -0.5em var(--colour__blueLight);
   transition: box-shadow 0.3s;
   text-decoration: none;
 }
 
-.colour__link__underline:hover {
+.link__underline:hover {
   box-shadow: inset 0 -2em var(--colour__blueLight);
 }
 
-.colour__button {
+.button {
   background-color: var(--colour__white);
   border-color: var(--colour__black);
   color: var(--colour__black);
   transition-property: border-color, background-color, color;
-  transition-duration: var(--transition-duration);
+  transition-duration: var(--transitionDuration);
 }
 
-.colour__button:disabled,
-.colour__buttonDisabled {
+.button:disabled,
+.buttonDisabled {
   opacity: 0.5;
   background-color: var(--colour__greyLight);
   border-color: var(--colour__grey);
   color: var(--colour__grey);
 }
 
-.colour__button:hover {
+.button:hover {
   color: var(--colour__white);
   border-color: var(--colour__blue);
   background-color: var(--colour__blue);
 }
 
-.colour__button_submit {
-  composes: colour__button;
+.button_submit {
+  composes: button;
   background-color: var(--colour__black);
   border-color: var(--colour__black);
   color: var(--colour__white);
 }
 
-.colour__button_submit:disabled {
+.button_submit:disabled {
   background-color: var(--colour__grey);
   border-color: var(--colour__grey);
   color: var(--colour__greyLight);
 }
 
-.colour__input {
+.input {
   background-color: var(--colour__white);
   border-color: var(--colour__black);
   color: var(--colour__black);
   transition-property: border-color, background-color, color;
-  transition-duration: var(--transition-duration);
+  transition-duration: var(--transitionDuration);
 }
 
-.colour__input::placeholder {
+.input::placeholder {
   color: var(--colour__grey);
 }
 
-.colour__input:disabled {
+.input:disabled {
   opacity: 0.5;
   background-color: var(--colour__greyLight);
   border-color: var(--colour__grey);
 }
 
-.colour__input:hover,
-.colour__input:hover::placeholder {
+.input:hover,
+.input:hover::placeholder {
   color: var(--colour__blue);
   border-color: var(--colour__blue);
 }
 
-.colour__input:focus {
+.input:focus {
   color: var(--colour__black);
   border-color: var(--colour__blue);
 }
 
-.colour__input:focus::placeholder {
+.input:focus::placeholder {
   color: var(--colour__grey);
 }

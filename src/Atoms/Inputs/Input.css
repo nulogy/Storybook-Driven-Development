@@ -1,7 +1,7 @@
 .input {
   composes: fontSize__normal from "~/Quarks/Type.css";
   composes: light from "~/Quarks/Borders.css";
-  composes: colour__input from "~/Quarks/Colours.css";
+  composes: input from "~/Quarks/Colours.css";
   line-height: 3.8rem;
   height: 4rem;
   padding: 0 1.5rem;

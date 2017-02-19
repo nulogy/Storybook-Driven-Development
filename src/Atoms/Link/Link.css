@@ -1,6 +1,6 @@
 .link {
   composes: fontWeight__heavy from "~/Quarks/Type.css";
-  composes: colour__link__underline from "~/Quarks/Colours.css";
+  composes: link__underline from "~/Quarks/Colours.css";
   padding: 0 0.3rem;
   margin: 0 -0.3rem;
 }

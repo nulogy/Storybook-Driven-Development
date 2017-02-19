@@ -5,11 +5,11 @@
 }
 .groupDisabled {
   composes: group;
-  composes: colour__buttonDisabled from "~/Quarks/Colours.css";
+  composes: buttonDisabled from "~/Quarks/Colours.css";
 }
 
 .label {
-  composes: colour__button outline__blue__hover from "~/Quarks/Colours.css";
+  composes: button outline__blue__hover from "~/Quarks/Colours.css";
   composes: radius__sm__firstChild radius__sm__lastChild from "~/Quarks/Borders.css";
   text-align: center;
   flex: 1;
@@ -20,7 +20,7 @@ label:hover {
 
 .labelDisabled {
   composes: label;
-  composes: colour__buttonDisabled from "~/Quarks/Colours.css";
+  composes: buttonDisabled from "~/Quarks/Colours.css";
   opacity: .5;
   pointer-events: none;
 }

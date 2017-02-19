@@ -20,35 +20,35 @@ export default function ColoursStory() {
   storiesOf('✨ Colours', module)
     .add('text colours', () => (
       <div>
-        <Text className="colour__text__black" />
-        <Text className="colour__text__greyDark" />
-        <Text className="colour__text__grey" />
-        <Text className="colour__text__greyLight" />
-        <Text className="colour__text__white" inverse />
-        <Text className="colour__text__blue" />
-        <Text className="colour__text__blueLight" />
+        <Text className="text__black" />
+        <Text className="text__greyDark" />
+        <Text className="text__grey" />
+        <Text className="text__greyLight" />
+        <Text className="text__white" inverse />
+        <Text className="text__blue" />
+        <Text className="text__blueLight" />
       </div>
     ))
     .add('backgrounds', () => (
       <div>
-        <Box demo={colours} className="colour__background__black" inverse />
-        <Box demo={colours} className="colour__background__greyDark" inverse />
-        <Box demo={colours} className="colour__background__grey" inverse />
-        <Box demo={colours} className="colour__background__greyLight" inverse />
-        <Box demo={colours} className="colour__background__white" />
-        <Box demo={colours} className="colour__background__blue" inverse />
-        <Box demo={colours} className="colour__background__blueLight" inverse />
+        <Box demo={colours} className="background__black" inverse />
+        <Box demo={colours} className="background__greyDark" inverse />
+        <Box demo={colours} className="background__grey" inverse />
+        <Box demo={colours} className="background__greyLight" inverse />
+        <Box demo={colours} className="background__white" />
+        <Box demo={colours} className="background__blue" inverse />
+        <Box demo={colours} className="background__blueLight" inverse />
       </div>
     ))
     .add('borders', () => (
       <div>
-        <Box demo={colours} className="colour__border__black" borders />
-        <Box demo={colours} className="colour__border__greyDark" borders />
-        <Box demo={colours} className="colour__border__grey" borders />
-        <Box demo={colours} className="colour__border__greyLight" borders />
-        <Box demo={colours} className="colour__border__white" borders />
-        <Box demo={colours} className="colour__border__blue" borders />
-        <Box demo={colours} className="colour__border__blueLight" borders />
+        <Box demo={colours} className="border__black" borders />
+        <Box demo={colours} className="border__greyDark" borders />
+        <Box demo={colours} className="border__grey" borders />
+        <Box demo={colours} className="border__greyLight" borders />
+        <Box demo={colours} className="border__white" borders />
+        <Box demo={colours} className="border__blue" borders />
+        <Box demo={colours} className="border__blueLight" borders />
       </div>
     ))
     .add('outlines', () => (
