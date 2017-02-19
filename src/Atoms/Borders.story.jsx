@@ -5,7 +5,7 @@ import borders from './Borders.css';
 
 const containerStyles = {
   border: '1rem solid whitesmoke',
-  marginBottom: "2rem",
+  marginBottom: '2rem',
 };
 
 export default function BordersStory() {
