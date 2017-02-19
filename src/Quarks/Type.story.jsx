@@ -54,7 +54,7 @@ export default function MyComponentStory() {
         <p className={type.h3}>h3&mdash;32/40</p>
         <p className={type.h2}>h2&mdash;40/50</p>
         <p className={type.h1}>h1&mdash;48/60</p>
-        <p className={type.h0}>ho&mdash;64/80</p>
+        <p className={type.h0}>h0&mdash;64/80</p>
       </div>
     ))
     .add('weights', () => (
