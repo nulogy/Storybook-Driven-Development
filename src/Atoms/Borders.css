@@ -1,52 +1,161 @@
-.borderWidth__light   { border-width: 0.1rem; }
-.borderWidth__medium  { border-width: 0.2rem; }
-.borderWidth__heavy   { border-width: 0.3rem; }
+:root {
+  --width__sm: 0.1rem;
+  --width__md: 0.2rem;
+  --width__lg: 0.3rem;
+
+  --radius__sm: 0.15rem;
+  --radius__md: 0.3rem;
+  --radius__lg: 0.6rem;
+}
+
+.borderWidth__light   { border-width: var(--width__sm); }
+.borderWidth__medium  { border-width: var(--width__md); }
+.borderWidth__heavy   { border-width: var(--width__lg); }
+
 
 .borderStyle  { border-style: solid; }
 
-.borderRadius { border-radius: 0.3rem; }
 
-.borderRadius__top {
-  border-top-left-radius: 0.3rem;
-  border-top-right-radius: 0.3rem;
+.borderRadius__sm { border-radius: var(--radius__sm); }
+
+.borderRadius__sm__top {
+  border-top-left-radius: var(--radius__sm);
+  border-top-right-radius: var(--radius__sm);
 }
 
-.borderRadius__right {
-  border-top-right-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
+.borderRadius__sm__right {
+  border-top-right-radius: var(--radius__sm);
+  border-bottom-right-radius: var(--radius__sm);
 }
 
-.borderRadius__bottom {
-  border-bottom-left-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
+.borderRadius__sm__bottom {
+  border-bottom-left-radius: var(--radius__sm);
+  border-bottom-right-radius: var(--radius__sm);
 }
 
-.borderRadius__left {
-  border-top-left-radius: 0.3rem;
-  border-bottom-left-radius: 0.3rem;
+.borderRadius__sm__left {
+  border-top-left-radius: var(--radius__sm);
+  border-bottom-left-radius: var(--radius__sm);
 }
 
-.borderRadius__firstChild:first-child {
-  border-top-left-radius: 0.3rem;
-  border-bottom-left-radius: 0.3rem;
+.borderRadius__sm__firstChild:first-child {
+  border-top-left-radius: var(--radius__sm);
+  border-bottom-left-radius: var(--radius__sm);
 }
 
-.borderRadius__lastChild:last-child {
-  border-top-right-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
+.borderRadius__sm__lastChild:last-child {
+  border-top-right-radius: var(--radius__sm);
+  border-bottom-right-radius: var(--radius__sm);
 }
 
-.borderRadius__topChild:first-child {
-  border-top-left-radius: 0.3rem;
-  border-top-right-radius: 0.3rem;
+.borderRadius__sm__topChild:first-child {
+  border-top-left-radius: var(--radius__sm);
+  border-top-right-radius: var(--radius__sm);
 }
 
-.borderRadius__bottomChild:last-child {
-  border-bottom-left-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
+.borderRadius__sm__bottomChild:last-child {
+  border-bottom-left-radius: var(--radius__sm);
+  border-bottom-right-radius: var(--radius__sm);
 }
+
+
+.borderRadius,
+.borderRadius__md { border-radius: var(--radius__md); }
+
+.borderRadius__top,
+.borderRadius__md__top {
+  border-top-left-radius: var(--radius__md);
+  border-top-right-radius: var(--radius__md);
+}
+
+.borderRadius__right,
+.borderRadius__md__right {
+  border-top-right-radius: var(--radius__md);
+  border-bottom-right-radius: var(--radius__md);
+}
+
+.borderRadius__bottom,
+.borderRadius__md__bottom {
+  border-bottom-left-radius: var(--radius__md);
+  border-bottom-right-radius: var(--radius__md);
+}
+
+.borderRadius__left,
+.borderRadius__md__left {
+  border-top-left-radius: var(--radius__md);
+  border-bottom-left-radius: var(--radius__md);
+}
+
+.borderRadius__firstChild:first-child,
+.borderRadius__md__firstChild:first-child {
+  border-top-left-radius: var(--radius__md);
+  border-bottom-left-radius: var(--radius__md);
+}
+
+.borderRadius__lastChild:last-child,
+.borderRadius__md__lastChild:last-child {
+  border-top-right-radius: var(--radius__md);
+  border-bottom-right-radius: var(--radius__md);
+}
+
+.borderRadius__topChild:first-child,
+.borderRadius__md__topChild:first-child {
+  border-top-left-radius: var(--radius__md);
+  border-top-right-radius: var(--radius__md);
+}
+
+.borderRadius__bottomChild:last-child,
+.borderRadius__md__bottomChild:last-child {
+  border-bottom-left-radius: var(--radius__md);
+  border-bottom-right-radius: var(--radius__md);
+}
+
+
+.borderRadius__lg { border-radius: var(--radius__lg); }
+
+.borderRadius__lg__top {
+  border-top-left-radius: var(--radius__lg);
+  border-top-right-radius: var(--radius__lg);
+}
+
+.borderRadius__lg__right {
+  border-top-right-radius: var(--radius__lg);
+  border-bottom-right-radius: var(--radius__lg);
+}
+
+.borderRadius__lg__bottom {
+  border-bottom-left-radius: var(--radius__lg);
+  border-bottom-right-radius: var(--radius__lg);
+}
+
+.borderRadius__lg__left {
+  border-top-left-radius: var(--radius__lg);
+  border-bottom-left-radius: var(--radius__lg);
+}
+
+.borderRadius__lg__firstChild:first-child {
+  border-top-left-radius: var(--radius__lg);
+  border-bottom-left-radius: var(--radius__lg);
+}
+
+.borderRadius__lg__lastChild:last-child {
+  border-top-right-radius: var(--radius__lg);
+  border-bottom-right-radius: var(--radius__lg);
+}
+
+.borderRadius__lg__topChild:first-child {
+  border-top-left-radius: var(--radius__lg);
+  border-top-right-radius: var(--radius__lg);
+}
+
+.borderRadius__lg__bottomChild:last-child {
+  border-bottom-left-radius: var(--radius__lg);
+  border-bottom-right-radius: var(--radius__lg);
+}
+
 
 .borderRadius__sharp { border-radius: 0; }
+
 
 .light { composes: borderWidth__light borderStyle borderRadius; }
 .medium { composes: borderWidth__medium borderStyle borderRadius; }
@@ -56,36 +165,36 @@
 .medium__sharp { composes: borderWidth__medium borderStyle borderRadius__sharp; }
 .heavy__sharp { composes: borderWidth__heavy borderStyle borderRadius__sharp; }
 
-.borderWidth__top__light { border-top-width: 0.1rem; }
-.borderWidth__top__medium { border-top-width: 0.2rem; }
-.borderWidth__top__heavy { border-top-width: 0.3rem; }
+.borderWidth__top__light { border-top-width: var(--width__sm); }
+.borderWidth__top__medium { border-top-width: var(--width__md); }
+.borderWidth__top__heavy { border-top-width: var(--width__lg); }
 .borderStyle__top { border-top-style: solid; }
 
 .light__top__sharp { composes: borderWidth__top__light borderStyle__top borderRadius__sharp; }
 .medium__top__sharp { composes: borderWidth__top__medium borderStyle__top borderRadius__sharp; }
 .heavy__top__sharp { composes: borderWidth__top__heavy borderStyle__top borderRadius__sharp; }
 
-.borderWidth__bottom__light { border-bottom-width: 0.1rem; }
-.borderWidth__bottom__medium { border-bottom-width: 0.2rem; }
-.borderWidth__bottom__heavy { border-bottom-width: 0.3rem; }
+.borderWidth__bottom__light { border-bottom-width: var(--width__sm); }
+.borderWidth__bottom__medium { border-bottom-width: var(--width__md); }
+.borderWidth__bottom__heavy { border-bottom-width: var(--width__lg); }
 .borderStyle__bottom { border-bottom-style: solid; }
 
 .light__bottom__sharp { composes: borderWidth__bottom__light borderStyle__bottom borderRadius__sharp; }
 .medium__bottom__sharp { composes: borderWidth__bottom__medium borderStyle__bottom borderRadius__sharp; }
 .heavy__bottom__sharp { composes: borderWidth__bottom__heavy borderStyle__bottom borderRadius__sharp; }
 
-.borderWidth__left__light { border-left-width: 0.1rem; }
-.borderWidth__left__medium { border-left-width: 0.2rem; }
-.borderWidth__left__heavy { border-left-width: 0.3rem; }
+.borderWidth__left__light { border-left-width: var(--width__sm); }
+.borderWidth__left__medium { border-left-width: var(--width__md); }
+.borderWidth__left__heavy { border-left-width: var(--width__lg); }
 .borderStyle__left { border-left-style: solid; }
 
 .light__left__sharp { composes: borderWidth__left__light borderStyle__left borderRadius__sharp; }
 .medium__left__sharp { composes: borderWidth__left__medium borderStyle__left borderRadius__sharp; }
 .heavy__left__sharp { composes: borderWidth__left__heavy borderStyle__left borderRadius__sharp; }
 
-.borderWidth__right__light { border-right-width: 0.1rem; }
-.borderWidth__right__medium { border-right-width: 0.2rem; }
-.borderWidth__right__heavy { border-right-width: 0.3rem; }
+.borderWidth__right__light { border-right-width: var(--width__sm); }
+.borderWidth__right__medium { border-right-width: var(--width__md); }
+.borderWidth__right__heavy { border-right-width: var(--width__lg); }
 .borderStyle__right { border-right-style: solid; }
 
 .light__right__sharp { composes: borderWidth__right__light borderStyle__right borderRadius__sharp; }
