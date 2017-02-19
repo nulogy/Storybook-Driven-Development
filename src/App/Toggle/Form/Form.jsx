@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react";
-import Button from "~/Button";
-import Icon from "~/Icon";
-import styles from "~/Forms/Form.css";
+import Button from "~/Atoms/Button";
+import Icon from "~/Atoms/Icon";
+import styles from "~/Atoms/Form.css";
 import ToggleField from "~/Forms/Fields/ToggleField";
 import TextField from "~/Forms/Fields/TextField";
 import SelectField from "~/Forms/Fields/SelectField";

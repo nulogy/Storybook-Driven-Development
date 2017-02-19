@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import Field from './Field';
-import styles from '../Inputs/Input.css';
+import styles from '~/Atoms/Inputs/Input.css';
 
 const mapOptions = options => (options.map(
   ({ text, value }) => <option value={value} key={value}>{ text || value }</option>,

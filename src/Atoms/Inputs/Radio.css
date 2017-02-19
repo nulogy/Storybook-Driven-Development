@@ -2,7 +2,7 @@
 .groupDisabled { /* empty class for theming hook */ }
 
 .label {
-  composes: label from "../Label.css";
+  composes: label from "~/Atoms/Label.css";
   font-size: 1.6rem;
   font-weight: normal;
   margin: 0 0 1rem;

@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import Field from './Field';
-import ToggleGroup from '../Inputs/ToggleGroup';
+import ToggleGroup from '~/Atoms/Inputs/ToggleGroup';
 
 
 const ToggleField = ({

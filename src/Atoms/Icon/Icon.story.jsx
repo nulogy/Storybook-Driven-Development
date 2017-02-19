@@ -11,7 +11,7 @@ Mount.propTypes = {
 };
 
 export default function IconStory() {
-  storiesOf('❤️ Icon', module)
+  storiesOf('⭐️ Icon', module)
     .add('default', () => (
       <div>
         { keys(Icons).map(icon => <Mount name={icon} />) }

@@ -7,7 +7,7 @@ export default function ButtonStory() {
     name: 'button',
   };
 
-  storiesOf('❤️ Button', module)
+  storiesOf('⭐️ Button', module)
     .add('default', () => (
       <Button {...props}>Click me</Button>
     ))

@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import React, { PropTypes } from 'react';
-import Button from '~/Button';
-import styles from '~/Forms/Form.css';
+import Button from '~/Atoms/Button';
+import styles from '~/Atoms/Form.css';
 import TextField from '~/Forms/Fields/TextField';
 import SelectField from '~/Forms/Fields/SelectField';
 

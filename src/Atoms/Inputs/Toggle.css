@@ -1,5 +1,5 @@
 .group {
-  composes: button from "~/Button/Button.css";
+  composes: button from "~/Atoms/Button/Button.css";
   padding: 0;
   display: flex;
 }

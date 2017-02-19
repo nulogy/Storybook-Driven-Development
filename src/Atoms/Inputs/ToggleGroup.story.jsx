@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import cloneDeep from "lodash/cloneDeep";
-import RadioGroup from './RadioGroup';
+import ToggleGroup from './ToggleGroup';
 
-export default function RadioGroupStory() {
+export default function ToggleGroupStory() {
   const options = [
     { value: "value_a", text: "Value A" },
     { value: "value_b", text: "Value B" },
@@ -19,23 +19,26 @@ export default function RadioGroupStory() {
     onChange: action("onChange"),
   }
 
-  storiesOf('❤️ RadioGroup', module)
+  storiesOf('⭐️ ToggleGroup', module)
   .add('default', () => (
-    <RadioGroup {...props} />
+    <ToggleGroup {...props} />
   ))
   .add('with a value', () => (
-    <RadioGroup {...props} value="value_b" />
+    <ToggleGroup {...props} value="value_b" />
   ))
   .add('all disabled', () => (
-    <RadioGroup {...props} disabled />
+    <ToggleGroup {...props} disabled />
   ))
   .add('one disabled', () => (
-    <RadioGroup {...props} options={disabledOptions} />
+    <ToggleGroup {...props} options={disabledOptions} />
   ))
   .add('all disabled with a value', () => (
-    <RadioGroup {...props} value="no_text_label" disabled />
+    <ToggleGroup {...props} value="no_text_label" disabled />
+  ))
+  .add('one disabled, another with a value', () => (
+    <ToggleGroup {...props} value="no_text_label" options={disabledOptions} />
   ))
   .add('one disabled with a value', () => (
-    <RadioGroup {...props} value="no_text_label" options={disabledOptions} />
+    <ToggleGroup {...props} value="value_b" options={disabledOptions} />
   ));
 }

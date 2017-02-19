@@ -3,5 +3,5 @@
 }
 
 .label {
-  composes: label from "../Label.css";
+  composes: label from "~/Atoms/Label.css";
 }

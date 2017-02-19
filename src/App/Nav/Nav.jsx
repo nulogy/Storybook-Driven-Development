@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react";
 import classNames from "classnames";
-import Icon from "~/Icon";
+import Icon from "~/Atoms/Icon";
 import styles from "./Nav.css";
 import logo from '~/App/nulogy_logo.svg';
 
