@@ -11,18 +11,20 @@ const sections = [
   { value: "/edit", text: "Edit" },
 ];
 
+const isActive = (value, chosenValue) => value === chosenValue;
+
 const Nav = ({ onChange, options = sections, value }) => (
-  <nav className={styles.nav}>
-    <ul className={styles.list} aria-role="navigation">
+  <nav className={styles.nav} role="navigation">
+    <ul className={styles.list}>
       <li>
         <a className={styles.itemHeader}>
           <img src={logo} className={styles.logo} alt="logo" />
           <h1 className={styles.text}>Styleguide Driven Development</h1>
         </a>
       </li>
-      { options.map(({value, text}) => (
-        <li>
-          <a href={value} className={styles.item}>
+      { options.map(({value: itemValue, text}) => (
+        <li key={itemValue}>
+          <a href={itemValue} className={styles[isActive(itemValue, value) ? "itemActive" : "item"]}>
             <Icon name={text} />
             <span className={styles.text}>{ text }</span>
           </a>
@@ -39,7 +41,7 @@ Nav.propTypes = {
       value: PropTypes.string.isRequired,
       text: PropTypes.string,
     })
-  ).isRequired,
+  ),
   value: PropTypes.string,
 };
 

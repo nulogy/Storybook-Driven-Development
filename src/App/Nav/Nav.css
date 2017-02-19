@@ -20,6 +20,11 @@
   margin-bottom: 3rem;
 }
 
+.itemActive {
+  composes: item;
+  composes: colour__text__blueLight from "~/Atoms/Colours.css";
+}
+
 .itemHeader {
   composes: item;
   composes: colour__background__blue from "~/Atoms/Colours.css";
