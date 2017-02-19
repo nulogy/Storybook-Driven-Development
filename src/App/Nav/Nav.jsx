@@ -1,5 +1,7 @@
 import React, { PropTypes } from "react";
 import Icon from "~/Icon";
+import styles from "./Nav.css";
+import logo from '~/App/nulogy_logo.svg';
 
 const sections = [
   { value: "/home", text: "Home" },
@@ -10,18 +12,24 @@ const sections = [
 ];
 
 const Nav = ({ onChange, options = sections, value }) => (
-  <navigation>
-    <ul aria-role="navigation">
+  <nav className={styles.nav}>
+    <ul className={styles.list} aria-role="navigation">
+      <li>
+        <a className={styles.itemHeader}>
+          <img src={logo} className={styles.logo} alt="logo" />
+          <h1 className={styles.text}>Styleguide Driven Development</h1>
+        </a>
+      </li>
       { options.map(({value, text}) => (
         <li>
-          <a href={value}>
+          <a href={value} className={styles.item}>
             <Icon name={text} />
-            { text }
+            <span className={styles.text}>{ text }</span>
           </a>
         </li>
       )) }
     </ul>
-  </navigation>
+  </nav>
 );
 
 Nav.propTypes = {
