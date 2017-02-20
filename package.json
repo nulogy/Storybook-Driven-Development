@@ -70,9 +70,9 @@
     "pretest": "yarn lint",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "yarn lint:css && yarn lint:js",
-    "lint:css": "stylelint src/**/*.css",
-    "lint:js": "eslint src/**/*.{js,jsx}",
-    "lint:fix": "eslint src/**/*.{js,jsx} --fix",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:js": "eslint \"src/**/*.{js,jsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
     "storybook": "start-storybook -p 9009 -s public -c config/storybook",
     "build-storybook": "build-storybook -s public -c config/storybook",
     "deploy-storybook": "storybook-to-ghpages"
