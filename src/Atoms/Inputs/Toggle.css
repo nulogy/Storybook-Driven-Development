@@ -29,8 +29,7 @@ label:hover {
 
 .labelActive {
   composes: label;
-  background-color: #000;
-  color: #fff;
+  composes: button_submit from "~/Quarks/Colours.css";
 }
 
 .labelActiveDisabled {
