@@ -19,6 +19,9 @@
 label:hover {
   z-index: 1;
 }
+.label + .label {
+  margin-left: 0;
+}
 
 .labelDisabled {
   composes: label;
@@ -34,10 +37,6 @@ label:hover {
 
 .labelActiveDisabled {
   composes: labelDisabled labelActive;
-}
-
-.label + .label {
-  margin-left: 0;
 }
 
 .radio {
