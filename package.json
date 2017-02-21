@@ -68,7 +68,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "pretest": "yarn lint",
+    "precover": "yarn lint",
+    "cover": "jest --env=jsdom --coverage",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "yarn lint:css && yarn lint:js",
     "lint:css": "stylelint \"src/**/*.css\"",
