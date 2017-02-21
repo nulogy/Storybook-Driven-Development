@@ -19,6 +19,7 @@
 label:hover {
   z-index: 1;
 }
+
 .label + .label {
   margin-left: 0;
 }
