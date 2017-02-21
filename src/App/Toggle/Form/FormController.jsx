@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component, PropTypes } from 'react';
 
 function mapPropsToChildren(children, props) {
   return React.Children.map(children, child => React.cloneElement(child, Object.assign(props, child.props)));
@@ -8,10 +8,10 @@ class FormController extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      interval_name: "",
-      start_milestone: "",
-      end_milestone: "",
-      measurementType: "milestone",
+      intervalName: '',
+      startMilestone: '',
+      endMilestone: '',
+      measurementType: 'milestone',
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -21,14 +21,14 @@ class FormController extends Component {
     const { name, value } = event.target;
 
     this.setState({
-      [name]: value
+      [name]: value,
     });
   }
 
   childProps() {
     return Object.assign(
       { handleChange: this.handleChange },
-      this.state
+      this.state,
     );
   }
 

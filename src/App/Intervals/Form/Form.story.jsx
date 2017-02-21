@@ -4,11 +4,11 @@ import Form from './Form';
 
 export default function FormStory() {
   const props = {
-    interval_name: "",
-    start_milestone: "",
-    end_milestone: "",
-    handleChange: action("handleChange"),
-  }
+    intervalName: '',
+    startMilestone: '',
+    endMilestone: '',
+    handleChange: action('handleChange'),
+  };
 
   storiesOf('Interval Form', module)
     .add('default', () => (

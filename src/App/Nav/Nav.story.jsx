@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 import Nav from './Nav';
 
 export default function NavStory() {
@@ -13,8 +13,8 @@ export default function NavStory() {
     .add('with other options', () => (
       <Nav
         options={[
-          { value: "/home", text: "Home" },
-          { value: "/edit", text: "Edit" },
+          { value: '/home', text: 'Home' },
+          { value: '/edit', text: 'Edit' },
         ]}
       />
     ));

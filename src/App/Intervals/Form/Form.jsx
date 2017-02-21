@@ -11,33 +11,33 @@ const options = [
 ];
 
 const IntervalForm = ({
-  interval_name,
-  start_milestone,
-  end_milestone,
+  intervalName,
+  startMilestone,
+  endMilestone,
   handleChange,
 }) => (
   <form>
     <h2 className={styles.title}>Create new interval</h2>
 
     <TextField
-      name="interval_name"
-      value={interval_name}
+      name="intervalName"
+      value={intervalName}
       label="Add interval name"
       onChange={handleChange}
     />
 
     <SelectField
-      name="start_milestone"
+      name="startMilestone"
       label="Select start milestone"
-      value={start_milestone}
+      value={startMilestone}
       options={options}
       onChange={handleChange}
     />
 
     <SelectField
-      name="end_milestone"
+      name="endMilestone"
       label="Select end milestone"
-      value={end_milestone}
+      value={endMilestone}
       options={options}
       onChange={handleChange}
     />
@@ -50,9 +50,9 @@ const IntervalForm = ({
 );
 
 IntervalForm.propTypes = {
-  interval_name: PropTypes.string,
-  start_milestone: PropTypes.string,
-  end_milestone: PropTypes.string,
+  intervalName: PropTypes.string,
+  startMilestone: PropTypes.string,
+  endMilestone: PropTypes.string,
   handleChange: PropTypes.func,
 };
 

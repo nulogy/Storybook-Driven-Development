@@ -3,6 +3,7 @@
   padding: 0;
   display: flex;
 }
+
 .groupDisabled {
   composes: group;
   composes: buttonDisabled from "~/Quarks/Colours.css";
@@ -14,6 +15,7 @@
   text-align: center;
   flex: 1;
 }
+
 label:hover {
   z-index: 1;
 }
@@ -21,17 +23,20 @@ label:hover {
 .labelDisabled {
   composes: label;
   composes: buttonDisabled from "~/Quarks/Colours.css";
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
+
 .labelActive {
   composes: label;
   background-color: #000;
   color: #fff;
 }
+
 .labelActiveDisabled {
   composes: labelDisabled labelActive;
 }
+
 .label + .label {
   margin-left: 0;
 }

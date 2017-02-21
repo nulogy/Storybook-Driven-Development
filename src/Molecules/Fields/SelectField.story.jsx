@@ -4,16 +4,16 @@ import SelectField from './SelectField';
 
 export default function SelectFieldStory() {
   const options = [
-    { value: "value_a", text: "Value A" },
-    { value: "value_b", text: "Value B" },
-    { value: "no_text_label" },
+    { value: 'value_a', text: 'Value A' },
+    { value: 'value_b', text: 'Value B' },
+    { value: 'no_text_label' },
   ];
   const props = {
-    label: "a label",
-    name: "name",
+    label: 'a label',
+    name: 'name',
     options,
-    onChange: action("onChange"),
-  }
+    onChange: action('onChange'),
+  };
 
   storiesOf('❤️ SelectField', module)
     .add('default', () => (

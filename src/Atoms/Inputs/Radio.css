@@ -8,12 +8,15 @@
   margin: 0 0 1rem;
   padding: 0;
 }
+
 .labelDisabled {
   composes: label;
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
+
 .labelActive { composes: label; }
+
 .labelActiveDisabled { composes: labelDisabled; }
 
 .radio {

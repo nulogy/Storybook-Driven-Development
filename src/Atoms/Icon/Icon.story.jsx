@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import keys from 'lodash/keys';
 import Icon from './Icon';

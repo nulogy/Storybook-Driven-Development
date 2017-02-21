@@ -2,11 +2,9 @@
   --width__sm: 0.1rem;
   --width__md: 0.2rem;
   --width__lg: 0.3rem;
-
   --radius__sm: 0.15rem;
   --radius__md: 0.3rem;
   --radius__lg: 0.6rem;
-
   --style: solid;
 }
 
@@ -14,9 +12,7 @@
 .width__md  { border-width: var(--width__md); }
 .width__lg   { border-width: var(--width__lg); }
 
-
 .style { border-style: var(--style); }
-
 
 .radius__sm { border-radius: var(--radius__sm); }
 
@@ -59,7 +55,6 @@
   border-bottom-left-radius: var(--radius__sm);
   border-bottom-right-radius: var(--radius__sm);
 }
-
 
 .radius,
 .radius__md { border-radius: var(--radius__md); }
@@ -112,7 +107,6 @@
   border-bottom-right-radius: var(--radius__md);
 }
 
-
 .radius__lg { border-radius: var(--radius__lg); }
 
 .radius__lg__top {
@@ -155,9 +149,7 @@
   border-bottom-right-radius: var(--radius__lg);
 }
 
-
 .radius__sharp { border-radius: 0; }
-
 
 .light { composes: width__sm style radius; }
 .medium { composes: width__md style radius; }

@@ -5,12 +5,12 @@ import FormController from './FormController';
 
 export default function FormStory() {
   const props = {
-    interval_name: "",
-    start_milestone: "",
-    end_milestone: "",
-    measurementType: "",
-    handleChange: action("handleChange"),
-  }
+    intervalName: '',
+    startMilestone: '',
+    endMilestone: '',
+    measurementType: '',
+    handleChange: action('handleChange'),
+  };
 
   storiesOf('Toggle Form', module)
     .add('default', () => (

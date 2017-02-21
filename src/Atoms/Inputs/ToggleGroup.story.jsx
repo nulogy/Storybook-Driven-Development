@@ -1,23 +1,23 @@
 import React from 'react';
-import { storiesOf, action, linkTo } from '@kadira/storybook';
-import cloneDeep from "lodash/cloneDeep";
+import { storiesOf, action } from '@kadira/storybook';
+import cloneDeep from 'lodash/cloneDeep';
 import ToggleGroup from './ToggleGroup';
 
 export default function ToggleGroupStory() {
   const options = [
-    { value: "value_a", text: "Value A" },
-    { value: "value_b", text: "Value B" },
-    { value: "no_text_label" },
+    { value: 'value_a', text: 'Value A' },
+    { value: 'value_b', text: 'Value B' },
+    { value: 'no_text_label' },
   ];
 
   const disabledOptions = cloneDeep(options);
   disabledOptions[1].disabled = true;
 
   const props = {
-    name: "name",
+    name: 'name',
     options,
-    onChange: action("onChange"),
-  }
+    onChange: action('onChange'),
+  };
 
   storiesOf('⭐️ ToggleGroup', module)
   .add('default', () => (

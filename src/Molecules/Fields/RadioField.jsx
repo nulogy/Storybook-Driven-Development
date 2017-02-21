@@ -1,6 +1,6 @@
+import RadioGroup from '~/Atoms/Inputs/RadioGroup';
 import React, { PropTypes } from 'react';
 import Field from './Field';
-import RadioGroup from '~/Atoms/Inputs/RadioGroup';
 
 
 const RadioField = ({

@@ -1,6 +1,6 @@
+import styles from '~/Atoms/Inputs/Input.css';
 import React, { PropTypes } from 'react';
 import Field from './Field';
-import styles from '~/Atoms/Inputs/Input.css';
 
 const TextField = ({
   disabled = false,
