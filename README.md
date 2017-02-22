@@ -1,11 +1,9 @@
-## Storybook Driven Development
+# Storybook Driven Development [![Build Status](https://travis-ci.org/theinterned/Storybook-Driven-Development.svg?branch=master)](https://travis-ci.org/theinterned/Storybook-Driven-Development)
 
 This repo is a demonstration of how to practically use Storybook Driven Development.
 
 [View the storybook here](https://theinterned.github.io/Storybook-Driven-Development/)
 
-
-# Local Setup
 ## Installation
 Install dependencies with
 ```
