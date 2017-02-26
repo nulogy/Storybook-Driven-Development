@@ -19,6 +19,8 @@ module.exports = {
   "rules": {
     "max-len": ["error", 120],
     "import/no-extraneous-dependencies": ["error", {"devDependencies": ["!config/**", "!.storybook/**", "!scripts/**"]}],
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
     "no-confusing-arrow": ["error", {"allowParens": true}],
     "react/jsx-filename-extension": 0,
     "react/require-default-props": 0,
