@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Quark.icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quark.icon">
+            <g id="Single-Point-Icon" transform="translate(2.000000, 5.000000)">
+                <ellipse id="Combined-Shape" stroke="#000000" cx="8" cy="5" rx="5" ry="5"></ellipse>
+                <ellipse id="Oval-2-Copy-2" fill="#000000" cx="3" cy="5" rx="3" ry="3"></ellipse>
+                <ellipse id="Oval-2-Copy-3" fill="#000000" cx="13" cy="5" rx="3" ry="3"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
