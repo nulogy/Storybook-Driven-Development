@@ -13,6 +13,8 @@ const labelClass = (isLabelActive, isLabelDisabled) => {
   return classKey.join('');
 };
 
+const inputId = (name, value) => `${name}-${value}`;
+
 const mapOptions = (
   name,
   options,
@@ -23,18 +25,19 @@ const mapOptions = (
 ) => (options.map(
   ({ text, value, disabled = false }) => (
     <label
-      htmlFor={name}
+      htmlFor={inputId(name, value)}
       className={styles[labelClass(isChecked(value, chosenValue), isDisabled(disabled, allDisabled))]}
       key={value}
     >
       <input
-        className={styles.radio}
-        type="radio"
-        name={name}
-        value={value}
         checked={isChecked(value, chosenValue)}
+        className={styles.radio}
         disabled={isDisabled(disabled, allDisabled)}
+        id={inputId(name, value)}
+        name={name}
         onChange={onChange}
+        type="radio"
+        value={value}
       />
       { text || value }
     </label>
