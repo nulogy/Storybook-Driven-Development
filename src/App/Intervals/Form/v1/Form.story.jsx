@@ -10,7 +10,7 @@ export default function FormStory() {
     handleChange: action('handleChange'),
   };
 
-  storiesOf('Interval Form', module)
+  storiesOf('Interval Form - v1', module)
     .add('default', () => (
       <Form {...props} />
     ));

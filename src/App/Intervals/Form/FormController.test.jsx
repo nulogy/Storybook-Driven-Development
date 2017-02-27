@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import keys from 'lodash/keys';
 import FormController from './FormController';
 
-describe('Interval FormController', () => {
+describe('Measurement FormController', () => {
   let subject;
   // eslint-disable-next-line react/prop-types
   const Mock = props => <span>{ props.children }</span>;
@@ -26,6 +26,7 @@ describe('Interval FormController', () => {
       'intervalName',
       'startMilestone',
       'endMilestone',
+      'measurementType',
     ]);
 
     it('maintains form values in its state', () => {
@@ -36,6 +37,18 @@ describe('Interval FormController', () => {
       expect(keys(child().props()))
         .toEqual(expectedFormNames);
     });
+
+    it('sets defaults to be empty strings', () => {
+      expectStateAndPropsToMatch('intervalName', '');
+      expectStateAndPropsToMatch('startMilestone', '');
+      expectStateAndPropsToMatch('endMilestone', '');
+    });
+  });
+
+  describe('toggle state', () => {
+    it('passes default toggle state to its children', () => {
+      expectStateAndPropsToMatch('measurementType', 'milestone');
+    });
   });
 
   describe('handleChange', () => {
@@ -45,8 +58,6 @@ describe('Interval FormController', () => {
     });
 
     it('updates state with the name and value of the target recieved in the event', () => {
-      expectStateAndPropsToMatch('intervalName', '');
-
       const mockEvent = {
         target: {
           name: 'intervalName',
@@ -56,6 +67,18 @@ describe('Interval FormController', () => {
       subject.instance().handleChange(mockEvent);
 
       expectStateAndPropsToMatch('intervalName', 'changed value');
+    });
+
+    it('works with radio fields as well', () => {
+      const mockEvent = {
+        target: {
+          name: 'measurementType',
+          value: 'interval',
+        },
+      };
+      subject.instance().handleChange(mockEvent);
+
+      expectStateAndPropsToMatch('measurementType', 'interval');
     });
   });
 });

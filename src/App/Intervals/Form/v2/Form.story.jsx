@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 import Form from './Form';
-import FormController from './FormController';
+import FormController from '../FormController';
 
 export default function FormStory() {
   const props = {
@@ -12,7 +12,7 @@ export default function FormStory() {
     handleChange: action('handleChange'),
   };
 
-  storiesOf('Toggle Form', module)
+  storiesOf('Interval Form - v2 - Radio', module)
     .add('default', () => (
       <Form {...props} />
     ))

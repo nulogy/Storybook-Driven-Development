@@ -1,9 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 function mapPropsToChildren(children, props) {
-  return React.Children.map(children, child => (
-    React.cloneElement(child, Object.assign(props, child.props))
-  ));
+  return React.Children.map(children, child => React.cloneElement(child, Object.assign(props, child.props)));
 }
 
 class FormController extends Component {
@@ -13,15 +11,14 @@ class FormController extends Component {
       intervalName: '',
       startMilestone: '',
       endMilestone: '',
+      measurementType: 'milestone',
     };
 
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
+    const { name, value } = event.target;
 
     this.setState({
       [name]: value,
