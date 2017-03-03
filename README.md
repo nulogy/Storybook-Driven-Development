@@ -2,7 +2,7 @@
 
 This repo is a demonstration of how to practically use Storybook Driven Development.
 
-[View the storybook here](https://theinterned.github.io/Storybook-Driven-Development/)
+[View the storybook here](https://nulogy.github.io/Storybook-Driven-Development/)
 
 ## Installation
 Install dependencies with
@@ -24,7 +24,7 @@ yarn test
 ```
 
 ## Deploying github.io page
-Automatically update the [github.io static page](https://theinterned.github.io/Storybook-Driven-Development/) with
+Automatically update the [github.io static page](https://nulogy.github.io/Storybook-Driven-Development/) with
 ```
 yarn run deploy-storybook
 ```
