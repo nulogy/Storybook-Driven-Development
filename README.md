@@ -4,6 +4,8 @@ This repo is a demonstration of how to practically use Storybook Driven Developm
 
 [View the storybook here](https://nulogy.github.io/Storybook-Driven-Development/)
 
+[Read the blog post here](https://medium.com/@theinterned/storybook-driven-development-a3c517276c07#.k6thmvwfa)
+
 ## Installation
 Install dependencies with
 ```
@@ -28,6 +30,3 @@ Automatically update the [github.io static page](https://nulogy.github.io/Storyb
 ```
 yarn run deploy-storybook
 ```
-
-TODO:
-Slides for presentation here: ???
