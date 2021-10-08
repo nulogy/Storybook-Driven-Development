@@ -61,7 +61,7 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
